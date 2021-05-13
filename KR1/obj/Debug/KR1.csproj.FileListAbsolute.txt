@@ -11,3 +11,7 @@ C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.MainForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.InfoForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.LoginForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.FormsForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.AdminFormsForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.ComputersForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.NetworkForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.EmployeeForm.resources

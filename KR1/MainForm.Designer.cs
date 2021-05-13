@@ -29,16 +29,11 @@ namespace KR1
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.formsBtn = new System.Windows.Forms.Button();
             this.reportsBtn = new System.Windows.Forms.Button();
             this.infoBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
-            this.KR_bindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bD_KRDataSet = new KR1.BD_KRDataSet();
-            ((System.ComponentModel.ISupportInitialize)(this.KR_bindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -95,16 +90,6 @@ namespace KR1
             this.exitBtn.UseVisualStyleBackColor = true;
             this.exitBtn.Click += new System.EventHandler(this.exitBtn_Click);
             // 
-            // KR_bindingSource
-            // 
-            this.KR_bindingSource.DataSource = this.bD_KRDataSet;
-            this.KR_bindingSource.Position = 0;
-            // 
-            // bD_KRDataSet
-            // 
-            this.bD_KRDataSet.DataSetName = "BD_KRDataSet";
-            this.bD_KRDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -117,8 +102,7 @@ namespace KR1
             this.Controls.Add(this.label1);
             this.Name = "MainForm";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.KR_bindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).EndInit();
+            this.Load += new System.EventHandler(this.MainForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -131,7 +115,7 @@ namespace KR1
         private System.Windows.Forms.Button reportsBtn;
         private System.Windows.Forms.Button infoBtn;
         private System.Windows.Forms.Button exitBtn;
-        private System.Windows.Forms.BindingSource KR_bindingSource;
         private BD_KRDataSet bD_KRDataSet;
+        private BD_KRDataSet bD_KRDataSet1;
     }
 }

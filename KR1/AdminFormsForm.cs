@@ -16,5 +16,42 @@ namespace KR1
         {
             InitializeComponent();
         }
+
+        private void computersBtn_Click(object sender, EventArgs e)
+        {
+            ComputersForm f = new ComputersForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
+
+        private void networkBtn_Click(object sender, EventArgs e)
+        {
+            NetworkForm f = new NetworkForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
+
+        private void employeeBtn_Click(object sender, EventArgs e)
+        {
+            EmployeeForm f = new EmployeeForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
+
+        private void accessoriesBtn_Click(object sender, EventArgs e)
+        {
+            AccessoriesForm f = new AccessoriesForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }
