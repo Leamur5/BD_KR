@@ -59,8 +59,7 @@ namespace KR1
         }
         public void updateRow()
         {
-            employeeTableAdapter.Update(SurnameTextBox.Text, NameTextBox.Text, PatronymicTextBox.Text, NetworkAccess.Checked,
-                PositionModel.id, PositionModel.surname, PositionModel.name, PositionModel.patronymic, PositionModel.networkAccess);
+            employeeTableAdapter.Update(bD_KRDataSet);
         }
         public void updateInputs()
         {
@@ -123,6 +122,7 @@ namespace KR1
             else
             {
                 updateRow();
+                
                 updateView();
                 PositionModel.reset();
                 clearInputs();

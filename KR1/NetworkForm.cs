@@ -63,8 +63,7 @@ namespace KR1
         }
         public void updateRow()
         {
-            networkTableAdapter2.Update(communicationTypeTextBox.Text, topologyTextBox.Text, InternetAccess.Checked, ipAdressTextBox.Text,
-                PositionModel.id, PositionModel.communicationType, PositionModel.topology, PositionModel.internetAccess, PositionModel.IPAdress);
+            networkTableAdapter2.Update(bD_KRDataSet2);
         }
         public void updateInputs()
         {
