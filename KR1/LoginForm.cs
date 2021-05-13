@@ -14,17 +14,13 @@ namespace KR1
     {
         public bool isLoggedIn { get; set; }
         public bool isAdmin { get; set; }
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "suetaDataSet.Users". При необходимости она может быть перемещена или удалена.
-            this.usersTableAdapter.Fill(this.bD_KRDataSet.Users);
-        }
         public LoginForm()
         {
             InitializeComponent();
             isLoggedIn = false;
             isAdmin = false;
         }
+        
         private void makeLogin()
         {
             string pass = PasswordTextBox.Text;
