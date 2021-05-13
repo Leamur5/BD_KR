@@ -1,7 +1,7 @@
 ﻿
 namespace KR1
 {
-    partial class FormsForm
+    partial class ReportsForm
     {
         /// <summary>
         /// Required designer variable.

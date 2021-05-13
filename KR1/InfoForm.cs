@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace KR1
 {
-    public partial class FormsForm : Form
+    public partial class InfoForm : Form
     {
-        public FormsForm()
+        public InfoForm()
         {
             InitializeComponent();
         }

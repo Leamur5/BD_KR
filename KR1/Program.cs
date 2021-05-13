@@ -16,7 +16,7 @@ namespace KR1
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormsForm());
+            Application.Run(new MainForm());
         }
     }
 }
