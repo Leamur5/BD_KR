@@ -16,7 +16,29 @@ namespace KR1
         {
             InitializeComponent();
         }
-
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            this.Hide();
+            LoginForm f = new LoginForm();
+            f.ShowDialog(this);
+            if (f.isLoggedIn)
+            {
+                if (f.isAdmin)
+                {
+                    Show();
+                }
+                else
+                {
+                    ReportsForm reports = new ReportsForm();
+                    reports.ShowDialog(this);
+                    Close();
+                }
+            }
+            else
+            {
+                Close();
+            }
+        }
         private void formsBtn_Click(object sender, EventArgs e)
         {
             FormsForm f = new FormsForm();

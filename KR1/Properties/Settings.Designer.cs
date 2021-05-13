@@ -33,5 +33,16 @@ namespace KR1.Properties {
                 return ((string)(this["BD_probaConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\Users\\User\\Desktop\\4sem\\BD\\BD_KR." +
+            "mdb")]
+        public string BD_KRConnectionString {
+            get {
+                return ((string)(this["BD_KRConnectionString"]));
+            }
+        }
     }
 }

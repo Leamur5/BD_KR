@@ -8,3 +8,5 @@ C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.csproj.CoreCompileInputs.cache
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.exe
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.pdb
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.MainForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.InfoForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.LoginForm.resources

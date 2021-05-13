@@ -46,12 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BD_probaDataSet.Designer.cs">
+    <Compile Include="BD_KRDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
-      <DependentUpon>BD_probaDataSet.xsd</DependentUpon>
+      <DependentUpon>BD_KRDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="DGVDataSourceChanger.cs" />
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="InfoForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -79,6 +85,12 @@
     <Compile Include="ICRUDForm.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="InfoForm.resx">
+      <DependentUpon>InfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -91,16 +103,16 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="BD_probaDataSet.xsc">
-      <DependentUpon>BD_probaDataSet.xsd</DependentUpon>
+    <None Include="BD_KRDataSet.xsc">
+      <DependentUpon>BD_KRDataSet.xsd</DependentUpon>
     </None>
-    <None Include="BD_probaDataSet.xsd">
+    <None Include="BD_KRDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>BD_probaDataSet.Designer.cs</LastGenOutput>
+      <LastGenOutput>BD_KRDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
-    <None Include="BD_probaDataSet.xss">
-      <DependentUpon>BD_probaDataSet.xsd</DependentUpon>
+    <None Include="BD_KRDataSet.xss">
+      <DependentUpon>BD_KRDataSet.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
