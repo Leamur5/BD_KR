@@ -39,8 +39,10 @@ namespace KR1
 
         private void NetworkForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet3.Network". При необходимости она может быть перемещена или удалена.
+            this.networkTableAdapter3.Fill(this.bD_KRDataSet3.Network);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet2.Network". При необходимости она может быть перемещена или удалена.
-            this.networkTableAdapter2.Fill(this.bD_KRDataSet2.Network);
+            
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Network". При необходимости она может быть перемещена или удалена.
             
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Network". При необходимости она может быть перемещена или удалена.
@@ -49,21 +51,21 @@ namespace KR1
         }
         public void updateView()
         {
-            networkTableAdapter2.Fill(bD_KRDataSet2.Network);
-            networkBindingSource.ResetBindings(false);
+            networkTableAdapter3.Fill(bD_KRDataSet3.Network);
+            networkBindingSource1.ResetBindings(false);
             networkDataGridView.Update();
         }
         public void insertRow()
         {
-            networkTableAdapter2.Insert(communicationTypeTextBox.Text, topologyTextBox.Text, InternetAccess.Checked, ipAdressTextBox.Text);
+            networkTableAdapter3.Insert(communicationTypeTextBox.Text, topologyTextBox.Text, InternetAccess.Checked, ipAdressTextBox.Text);
         }
         public void deleteRow()
         {
-            networkTableAdapter2.Delete(PositionModel.id, PositionModel.communicationType, PositionModel.topology, PositionModel.internetAccess, PositionModel.IPAdress);
+            networkTableAdapter3.Delete(PositionModel.id, PositionModel.communicationType, PositionModel.topology, PositionModel.internetAccess, PositionModel.IPAdress);
         }
         public void updateRow()
         {
-            networkTableAdapter2.Update(bD_KRDataSet2);
+            networkTableAdapter3.Update(bD_KRDataSet3);
         }
         public void updateInputs()
         {

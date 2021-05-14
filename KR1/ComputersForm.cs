@@ -49,45 +49,45 @@ namespace KR1
         }
         public void updateView()
         {
-            computerTableAdapter.Fill(bD_KRDataSet.Computer);
+            computerTableAdapter1.Fill(bD_KRDataSet1.Computer);
             computerBindingSource.ResetBindings(false);
             computerDataGridView.Update();
         }
         public void insertRow()
         {
-            computerTableAdapter.Insert(locationTableAdapter.GetData().First(u => Convert.ToString(u.ID) == locationComboBox.Text).ID,
+            computerTableAdapter1.Insert(locationTableAdapter1.GetData().First(u => Convert.ToString(u.ID) == locationComboBox.Text).ID,
                 OSTextBox.Text, Convert.ToInt32(costNumericUpDown.Value),
                 Convert.ToInt32(lifeTimeTextBox.Text), Convert.ToInt32(maxLifeTimeTextBox.Text), 
-                employeeTableAdapter.GetData().First(u => u.Surname == userComboBox.Text).ID,
-                networkTableAdapter.GetData().First(u => u.ID == Convert.ToInt32(networkComboBox.Text)).ID,
-                accessoriesTableAdapter.GetData().First(u => u.View == accessoriesComboBox.Text).ID,
-                purchasesTableAdapter.GetData().First(u => u.ID == Convert.ToInt32(purchaseComboBox.Text)).ID,
-                repairTableAdapter.GetData().First(u => u.ID == Convert.ToInt32(repairComboBox.Text)).ID);
+                employeeTableAdapter1.GetData().First(u => u.Surname == userComboBox.Text).ID,
+                networkTableAdapter1.GetData().First(u => u.ID == Convert.ToInt32(networkComboBox.Text)).ID,
+                accessoriesTableAdapter1.GetData().First(u => u.View == accessoriesComboBox.Text).ID,
+                purchasesTableAdapter1.GetData().First(u => u.ID == Convert.ToInt32(purchaseComboBox.Text)).ID,
+                repairTableAdapter1.GetData().First(u => u.ID == Convert.ToInt32(repairComboBox.Text)).ID);
         }
 
         public void deleteRow()
         {
-            computerTableAdapter.Delete(ComputersModel.id, ComputersModel.location, ComputersModel.OS, 
+            computerTableAdapter1.Delete(ComputersModel.id, ComputersModel.location, ComputersModel.OS, 
                 ComputersModel.cost, ComputersModel.lifeTime, ComputersModel.maxLifeTime,
                 ComputersModel.user, ComputersModel.network, ComputersModel.accessories,
                 ComputersModel.purchase, ComputersModel.repair);
         }
         public void updateRow()
         {
-            computerTableAdapter.Update(bD_KRDataSet);
+            computerTableAdapter1.Update(bD_KRDataSet1);
         }
         public void updateInputs()
         {
-            locationComboBox.SelectedIndex = locationComboBox.FindString(Convert.ToString(locationTableAdapter.GetData().FirstOrDefault(u => u.ID == ComputersModel.location).ID));
+            locationComboBox.SelectedIndex = locationComboBox.FindString(Convert.ToString(locationTableAdapter1.GetData().FirstOrDefault(u => u.ID == ComputersModel.location).ID));
             OSTextBox.Text = ComputersModel.OS;
             costNumericUpDown.Value = ComputersModel.cost;
             lifeTimeTextBox.Text = Convert.ToString(ComputersModel.lifeTime);
             maxLifeTimeTextBox.Text = Convert.ToString(ComputersModel.maxLifeTime);
-            userComboBox.SelectedIndex = userComboBox.FindString(employeeTableAdapter.GetData().FirstOrDefault(u => u.ID == ComputersModel.user).Surname);
-            networkComboBox.SelectedIndex = networkComboBox.FindString(Convert.ToString(locationTableAdapter.GetData().FirstOrDefault(u => u.ID == ComputersModel.network).ID));
-            accessoriesComboBox.SelectedIndex = accessoriesComboBox.FindString(accessoriesTableAdapter.GetData().FirstOrDefault(u => u.ID == ComputersModel.accessories).View);
-            purchaseComboBox.SelectedIndex = purchaseComboBox.FindString(Convert.ToString(purchasesTableAdapter.GetData().FirstOrDefault(u => u.ID == ComputersModel.purchase).ID));
-            repairComboBox.SelectedIndex = repairComboBox.FindString(Convert.ToString(repairTableAdapter.GetData().FirstOrDefault(u => u.ID == ComputersModel.repair).ID));
+            userComboBox.SelectedIndex = userComboBox.FindString(employeeTableAdapter1.GetData().FirstOrDefault(u => u.ID == ComputersModel.user).Surname);
+            networkComboBox.SelectedIndex = networkComboBox.FindString(Convert.ToString(locationTableAdapter1.GetData().FirstOrDefault(u => u.ID == ComputersModel.network).ID));
+            accessoriesComboBox.SelectedIndex = accessoriesComboBox.FindString(accessoriesTableAdapter1.GetData().FirstOrDefault(u => u.ID == ComputersModel.accessories).View);
+            purchaseComboBox.SelectedIndex = purchaseComboBox.FindString(Convert.ToString(purchasesTableAdapter1.GetData().FirstOrDefault(u => u.ID == ComputersModel.purchase).ID));
+            repairComboBox.SelectedIndex = repairComboBox.FindString(Convert.ToString(repairTableAdapter1.GetData().FirstOrDefault(u => u.ID == ComputersModel.repair).ID));
 
         }
         public void clearInputs()
@@ -197,22 +197,22 @@ namespace KR1
 
         private void ComputersForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Repair". При необходимости она может быть перемещена или удалена.
+            this.repairTableAdapter1.Fill(this.bD_KRDataSet1.Repair);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Purchases". При необходимости она может быть перемещена или удалена.
+            this.purchasesTableAdapter1.Fill(this.bD_KRDataSet1.Purchases);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Accessories". При необходимости она может быть перемещена или удалена.
+            this.accessoriesTableAdapter1.Fill(this.bD_KRDataSet1.Accessories);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Network". При необходимости она может быть перемещена или удалена.
+            this.networkTableAdapter1.Fill(this.bD_KRDataSet1.Network);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Employee". При необходимости она может быть перемещена или удалена.
+            this.employeeTableAdapter1.Fill(this.bD_KRDataSet1.Employee);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Location". При необходимости она может быть перемещена или удалена.
+            this.locationTableAdapter1.Fill(this.bD_KRDataSet1.Location);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Computer". При необходимости она может быть перемещена или удалена.
+            this.computerTableAdapter1.Fill(this.bD_KRDataSet1.Computer);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Repair". При необходимости она может быть перемещена или удалена.
-            this.repairTableAdapter.Fill(this.bD_KRDataSet.Repair);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Purchases". При необходимости она может быть перемещена или удалена.
-            this.purchasesTableAdapter.Fill(this.bD_KRDataSet.Purchases);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Accessories". При необходимости она может быть перемещена или удалена.
-            this.accessoriesTableAdapter.Fill(this.bD_KRDataSet.Accessories);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Network". При необходимости она может быть перемещена или удалена.
-            this.networkTableAdapter.Fill(this.bD_KRDataSet.Network);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Employee". При необходимости она может быть перемещена или удалена.
-            this.employeeTableAdapter.Fill(this.bD_KRDataSet.Employee);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Users". При необходимости она может быть перемещена или удалена.
             
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Location". При необходимости она может быть перемещена или удалена.
-            this.locationTableAdapter.Fill(this.bD_KRDataSet.Location);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Computer". При необходимости она может быть перемещена или удалена.
-            this.computerTableAdapter.Fill(this.bD_KRDataSet.Computer);
 
         }
     }

@@ -51,45 +51,47 @@ namespace KR1
             this.purchaseComboBox = new System.Windows.Forms.ComboBox();
             this.repairComboBox = new System.Windows.Forms.ComboBox();
             this.computerDataGridView = new System.Windows.Forms.DataGridView();
-            this.bD_KRDataSet = new KR1.BD_KRDataSet();
-            this.computerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.computerTableAdapter = new KR1.BD_KRDataSetTableAdapters.ComputerTableAdapter();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.locationDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.operatingSystemDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.costDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lifeTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.maxLifeTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.userDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.networkNumberDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.accessoriesDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchaseIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.repairIDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.controlsPanel = new System.Windows.Forms.Panel();
             this.deleteButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
             this.locationComboBox = new System.Windows.Forms.ComboBox();
+            this.bD_KRDataSet1 = new KR1.BD_KRDataSet();
+            this.computerBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.computerTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.ComputerTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.locationTableAdapter = new KR1.BD_KRDataSetTableAdapters.LocationTableAdapter();
+            this.locationTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.LocationTableAdapter();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeTableAdapter = new KR1.BD_KRDataSetTableAdapters.EmployeeTableAdapter();
+            this.employeeTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.EmployeeTableAdapter();
+            this.bDKRDataSet1BindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.networkBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.networkTableAdapter = new KR1.BD_KRDataSetTableAdapters.NetworkTableAdapter();
+            this.networkTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.NetworkTableAdapter();
             this.accessoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.accessoriesTableAdapter = new KR1.BD_KRDataSetTableAdapters.AccessoriesTableAdapter();
+            this.accessoriesTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.AccessoriesTableAdapter();
             this.purchasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.purchasesTableAdapter = new KR1.BD_KRDataSetTableAdapters.PurchasesTableAdapter();
+            this.purchasesTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.PurchasesTableAdapter();
             this.repairBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.repairTableAdapter = new KR1.BD_KRDataSetTableAdapters.RepairTableAdapter();
+            this.repairTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.RepairTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.costNumericUpDown)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.computerDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.computerBindingSource)).BeginInit();
             this.controlsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computerBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bDKRDataSet1BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).BeginInit();
@@ -290,103 +292,23 @@ namespace KR1
             this.computerDataGridView.AutoGenerateColumns = false;
             this.computerDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.computerDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.locationDataGridViewTextBoxColumn,
-            this.operatingSystemDataGridViewTextBoxColumn,
-            this.costDataGridViewTextBoxColumn,
-            this.lifeTimeDataGridViewTextBoxColumn,
-            this.maxLifeTimeDataGridViewTextBoxColumn,
-            this.userDataGridViewTextBoxColumn,
-            this.networkNumberDataGridViewTextBoxColumn,
-            this.accessoriesDataGridViewTextBoxColumn,
-            this.purchaseIDDataGridViewTextBoxColumn,
-            this.repairIDDataGridViewTextBoxColumn});
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11});
             this.computerDataGridView.DataSource = this.computerBindingSource;
             this.computerDataGridView.Location = new System.Drawing.Point(12, 259);
             this.computerDataGridView.Name = "computerDataGridView";
             this.computerDataGridView.Size = new System.Drawing.Size(776, 189);
             this.computerDataGridView.TabIndex = 107;
             this.computerDataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.computerDataGridView_RowHeaderMouseClick);
-            // 
-            // bD_KRDataSet
-            // 
-            this.bD_KRDataSet.DataSetName = "BD_KRDataSet";
-            this.bD_KRDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // computerBindingSource
-            // 
-            this.computerBindingSource.DataMember = "Computer";
-            this.computerBindingSource.DataSource = this.bD_KRDataSet;
-            // 
-            // computerTableAdapter
-            // 
-            this.computerTableAdapter.ClearBeforeFill = true;
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
-            // locationDataGridViewTextBoxColumn
-            // 
-            this.locationDataGridViewTextBoxColumn.DataPropertyName = "Location";
-            this.locationDataGridViewTextBoxColumn.HeaderText = "Location";
-            this.locationDataGridViewTextBoxColumn.Name = "locationDataGridViewTextBoxColumn";
-            // 
-            // operatingSystemDataGridViewTextBoxColumn
-            // 
-            this.operatingSystemDataGridViewTextBoxColumn.DataPropertyName = "Operating system";
-            this.operatingSystemDataGridViewTextBoxColumn.HeaderText = "Operating system";
-            this.operatingSystemDataGridViewTextBoxColumn.Name = "operatingSystemDataGridViewTextBoxColumn";
-            // 
-            // costDataGridViewTextBoxColumn
-            // 
-            this.costDataGridViewTextBoxColumn.DataPropertyName = "Cost";
-            this.costDataGridViewTextBoxColumn.HeaderText = "Cost";
-            this.costDataGridViewTextBoxColumn.Name = "costDataGridViewTextBoxColumn";
-            // 
-            // lifeTimeDataGridViewTextBoxColumn
-            // 
-            this.lifeTimeDataGridViewTextBoxColumn.DataPropertyName = "Life time";
-            this.lifeTimeDataGridViewTextBoxColumn.HeaderText = "Life time";
-            this.lifeTimeDataGridViewTextBoxColumn.Name = "lifeTimeDataGridViewTextBoxColumn";
-            // 
-            // maxLifeTimeDataGridViewTextBoxColumn
-            // 
-            this.maxLifeTimeDataGridViewTextBoxColumn.DataPropertyName = "Max life time";
-            this.maxLifeTimeDataGridViewTextBoxColumn.HeaderText = "Max life time";
-            this.maxLifeTimeDataGridViewTextBoxColumn.Name = "maxLifeTimeDataGridViewTextBoxColumn";
-            // 
-            // userDataGridViewTextBoxColumn
-            // 
-            this.userDataGridViewTextBoxColumn.DataPropertyName = "User";
-            this.userDataGridViewTextBoxColumn.HeaderText = "User";
-            this.userDataGridViewTextBoxColumn.Name = "userDataGridViewTextBoxColumn";
-            // 
-            // networkNumberDataGridViewTextBoxColumn
-            // 
-            this.networkNumberDataGridViewTextBoxColumn.DataPropertyName = "Network number";
-            this.networkNumberDataGridViewTextBoxColumn.HeaderText = "Network number";
-            this.networkNumberDataGridViewTextBoxColumn.Name = "networkNumberDataGridViewTextBoxColumn";
-            // 
-            // accessoriesDataGridViewTextBoxColumn
-            // 
-            this.accessoriesDataGridViewTextBoxColumn.DataPropertyName = "Accessories";
-            this.accessoriesDataGridViewTextBoxColumn.HeaderText = "Accessories";
-            this.accessoriesDataGridViewTextBoxColumn.Name = "accessoriesDataGridViewTextBoxColumn";
-            // 
-            // purchaseIDDataGridViewTextBoxColumn
-            // 
-            this.purchaseIDDataGridViewTextBoxColumn.DataPropertyName = "Purchase_ID";
-            this.purchaseIDDataGridViewTextBoxColumn.HeaderText = "Purchase_ID";
-            this.purchaseIDDataGridViewTextBoxColumn.Name = "purchaseIDDataGridViewTextBoxColumn";
-            // 
-            // repairIDDataGridViewTextBoxColumn
-            // 
-            this.repairIDDataGridViewTextBoxColumn.DataPropertyName = "Repair_ID";
-            this.repairIDDataGridViewTextBoxColumn.HeaderText = "Repair_ID";
-            this.repairIDDataGridViewTextBoxColumn.Name = "repairIDDataGridViewTextBoxColumn";
             // 
             // controlsPanel
             // 
@@ -450,59 +372,144 @@ namespace KR1
             this.locationComboBox.TabIndex = 109;
             this.locationComboBox.ValueMember = "UnitId";
             // 
+            // bD_KRDataSet1
+            // 
+            this.bD_KRDataSet1.DataSetName = "BD_KRDataSet";
+            this.bD_KRDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // computerBindingSource
+            // 
+            this.computerBindingSource.DataMember = "Computer";
+            this.computerBindingSource.DataSource = this.bD_KRDataSet1;
+            // 
+            // computerTableAdapter1
+            // 
+            this.computerTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Location";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Location";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "OperatingSystem";
+            this.dataGridViewTextBoxColumn3.HeaderText = "OperatingSystem";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Cost";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Cost";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "LifeTime";
+            this.dataGridViewTextBoxColumn5.HeaderText = "LifeTime";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "MaxLifeTime";
+            this.dataGridViewTextBoxColumn6.HeaderText = "MaxLifeTime";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "User";
+            this.dataGridViewTextBoxColumn7.HeaderText = "User";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "NetworkNumber";
+            this.dataGridViewTextBoxColumn8.HeaderText = "NetworkNumber";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "Accessories";
+            this.dataGridViewTextBoxColumn9.HeaderText = "Accessories";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn10
+            // 
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "Purchase_ID";
+            this.dataGridViewTextBoxColumn10.HeaderText = "Purchase_ID";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
+            // 
+            // dataGridViewTextBoxColumn11
+            // 
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Repair_ID";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Repair_ID";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
+            // 
             // locationBindingSource
             // 
             this.locationBindingSource.DataMember = "Location";
-            this.locationBindingSource.DataSource = this.bD_KRDataSet;
+            this.locationBindingSource.DataSource = this.bD_KRDataSet1;
             // 
-            // locationTableAdapter
+            // locationTableAdapter1
             // 
-            this.locationTableAdapter.ClearBeforeFill = true;
+            this.locationTableAdapter1.ClearBeforeFill = true;
             // 
             // employeeBindingSource
             // 
             this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.bD_KRDataSet;
+            this.employeeBindingSource.DataSource = this.bD_KRDataSet1;
             // 
-            // employeeTableAdapter
+            // employeeTableAdapter1
             // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
+            this.employeeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // bDKRDataSet1BindingSource
+            // 
+            this.bDKRDataSet1BindingSource.DataSource = this.bD_KRDataSet1;
+            this.bDKRDataSet1BindingSource.Position = 0;
             // 
             // networkBindingSource
             // 
             this.networkBindingSource.DataMember = "Network";
-            this.networkBindingSource.DataSource = this.bD_KRDataSet;
+            this.networkBindingSource.DataSource = this.bD_KRDataSet1;
             // 
-            // networkTableAdapter
+            // networkTableAdapter1
             // 
-            this.networkTableAdapter.ClearBeforeFill = true;
+            this.networkTableAdapter1.ClearBeforeFill = true;
             // 
             // accessoriesBindingSource
             // 
             this.accessoriesBindingSource.DataMember = "Accessories";
-            this.accessoriesBindingSource.DataSource = this.bD_KRDataSet;
+            this.accessoriesBindingSource.DataSource = this.bD_KRDataSet1;
             // 
-            // accessoriesTableAdapter
+            // accessoriesTableAdapter1
             // 
-            this.accessoriesTableAdapter.ClearBeforeFill = true;
+            this.accessoriesTableAdapter1.ClearBeforeFill = true;
             // 
             // purchasesBindingSource
             // 
             this.purchasesBindingSource.DataMember = "Purchases";
-            this.purchasesBindingSource.DataSource = this.bD_KRDataSet;
+            this.purchasesBindingSource.DataSource = this.bD_KRDataSet1;
             // 
-            // purchasesTableAdapter
+            // purchasesTableAdapter1
             // 
-            this.purchasesTableAdapter.ClearBeforeFill = true;
+            this.purchasesTableAdapter1.ClearBeforeFill = true;
             // 
             // repairBindingSource
             // 
             this.repairBindingSource.DataMember = "Repair";
-            this.repairBindingSource.DataSource = this.bD_KRDataSet;
+            this.repairBindingSource.DataSource = this.bD_KRDataSet1;
             // 
-            // repairTableAdapter
+            // repairTableAdapter1
             // 
-            this.repairTableAdapter.ClearBeforeFill = true;
+            this.repairTableAdapter1.ClearBeforeFill = true;
             // 
             // ComputersForm
             // 
@@ -538,11 +545,12 @@ namespace KR1
             this.Click += new System.EventHandler(this.ComputersForm_Click);
             ((System.ComponentModel.ISupportInitialize)(this.costNumericUpDown)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.computerDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.computerBindingSource)).EndInit();
             this.controlsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.computerBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bDKRDataSet1BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).EndInit();
@@ -576,7 +584,6 @@ namespace KR1
         private System.Windows.Forms.ComboBox repairComboBox;
         private System.Windows.Forms.DataGridView computerDataGridView;
         private BD_KRDataSet bD_KRDataSet;
-        private System.Windows.Forms.BindingSource computerBindingSource;
         private BD_KRDataSetTableAdapters.ComputerTableAdapter computerTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn locationDataGridViewTextBoxColumn;
@@ -595,17 +602,38 @@ namespace KR1
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.ComboBox locationComboBox;
-        private System.Windows.Forms.BindingSource locationBindingSource;
         private BD_KRDataSetTableAdapters.LocationTableAdapter locationTableAdapter;
-        private System.Windows.Forms.BindingSource employeeBindingSource;
         private BD_KRDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter;
-        private System.Windows.Forms.BindingSource networkBindingSource;
         private BD_KRDataSetTableAdapters.NetworkTableAdapter networkTableAdapter;
-        private System.Windows.Forms.BindingSource accessoriesBindingSource;
         private BD_KRDataSetTableAdapters.AccessoriesTableAdapter accessoriesTableAdapter;
-        private System.Windows.Forms.BindingSource purchasesBindingSource;
         private BD_KRDataSetTableAdapters.PurchasesTableAdapter purchasesTableAdapter;
-        private System.Windows.Forms.BindingSource repairBindingSource;
         private BD_KRDataSetTableAdapters.RepairTableAdapter repairTableAdapter;
+        private BD_KRDataSet bD_KRDataSet1;
+        private System.Windows.Forms.BindingSource computerBindingSource;
+        private BD_KRDataSetTableAdapters.ComputerTableAdapter computerTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.BindingSource locationBindingSource;
+        private BD_KRDataSetTableAdapters.LocationTableAdapter locationTableAdapter1;
+        private System.Windows.Forms.BindingSource employeeBindingSource;
+        private BD_KRDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter1;
+        private System.Windows.Forms.BindingSource bDKRDataSet1BindingSource;
+        private System.Windows.Forms.BindingSource networkBindingSource;
+        private BD_KRDataSetTableAdapters.NetworkTableAdapter networkTableAdapter1;
+        private System.Windows.Forms.BindingSource accessoriesBindingSource;
+        private BD_KRDataSetTableAdapters.AccessoriesTableAdapter accessoriesTableAdapter1;
+        private System.Windows.Forms.BindingSource purchasesBindingSource;
+        private BD_KRDataSetTableAdapters.PurchasesTableAdapter purchasesTableAdapter1;
+        private System.Windows.Forms.BindingSource repairBindingSource;
+        private BD_KRDataSetTableAdapters.RepairTableAdapter repairTableAdapter1;
     }
 }

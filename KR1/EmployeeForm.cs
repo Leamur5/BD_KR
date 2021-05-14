@@ -38,29 +38,31 @@ namespace KR1
 
         private void EmployeeForm_Load(object sender, EventArgs e)
         {
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet1.Employee". При необходимости она может быть перемещена или удалена.
+            this.employeeTableAdapter1.Fill(this.bD_KRDataSet1.Employee);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Employee". При необходимости она может быть перемещена или удалена.
-            this.employeeTableAdapter.Fill(this.bD_KRDataSet.Employee);
+            
 
         }
 
         public void updateView()
         {
-            employeeTableAdapter.Fill(bD_KRDataSet.Employee);
-            employeeBindingSource.ResetBindings(false);
+            employeeTableAdapter1.Fill(bD_KRDataSet1.Employee);
+            employeeBindingSource1.ResetBindings(false);
             employeeDataGridView.Update();
         }
         public void insertRow()
         {
-            employeeTableAdapter.Insert(SurnameTextBox.Text, NameTextBox.Text, PatronymicTextBox.Text, NetworkAccess.Checked);
+            employeeTableAdapter1.Insert(SurnameTextBox.Text, NameTextBox.Text, PatronymicTextBox.Text, NetworkAccess.Checked);
         }
 
         public void deleteRow()
         {
-            employeeTableAdapter.Delete(EmployeeModel.id, EmployeeModel.surname, EmployeeModel.name, EmployeeModel.patronymic, EmployeeModel.networkAccess);
+            employeeTableAdapter1.Delete(EmployeeModel.id, EmployeeModel.surname, EmployeeModel.name, EmployeeModel.patronymic, EmployeeModel.networkAccess);
         }
         public void updateRow()
         {
-            employeeTableAdapter.Update(bD_KRDataSet);
+            employeeTableAdapter1.Update(bD_KRDataSet1);
         }
         public void updateInputs()
         {
@@ -164,7 +166,7 @@ namespace KR1
             {
                 return;
             }
-            var findedRow = employeeTableAdapter.GetData().FirstOrDefault(d => d.Surname.StartsWith(searchTextBox.Text));
+            var findedRow = employeeTableAdapter1.GetData().FirstOrDefault(d => d.Surname.StartsWith(searchTextBox.Text));
             if (findedRow == null)
             {
                 MessageBox.Show("Ничего не найдено");

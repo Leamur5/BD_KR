@@ -867,17 +867,17 @@ namespace KR1 {
             
             private global::System.Data.DataColumn columnLocation;
             
-            private global::System.Data.DataColumn columnOperating_system;
+            private global::System.Data.DataColumn columnOperatingSystem;
             
             private global::System.Data.DataColumn columnCost;
             
-            private global::System.Data.DataColumn columnLife_time;
+            private global::System.Data.DataColumn columnLifeTime;
             
-            private global::System.Data.DataColumn columnMax_life_time;
+            private global::System.Data.DataColumn columnMaxLifeTime;
             
             private global::System.Data.DataColumn columnUser;
             
-            private global::System.Data.DataColumn columnNetwork_number;
+            private global::System.Data.DataColumn columnNetworkNumber;
             
             private global::System.Data.DataColumn columnAccessories;
             
@@ -936,9 +936,9 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Operating_systemColumn {
+            public global::System.Data.DataColumn OperatingSystemColumn {
                 get {
-                    return this.columnOperating_system;
+                    return this.columnOperatingSystem;
                 }
             }
             
@@ -952,17 +952,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Life_timeColumn {
+            public global::System.Data.DataColumn LifeTimeColumn {
                 get {
-                    return this.columnLife_time;
+                    return this.columnLifeTime;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Max_life_timeColumn {
+            public global::System.Data.DataColumn MaxLifeTimeColumn {
                 get {
-                    return this.columnMax_life_time;
+                    return this.columnMaxLifeTime;
                 }
             }
             
@@ -976,9 +976,9 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Network_numberColumn {
+            public global::System.Data.DataColumn NetworkNumberColumn {
                 get {
-                    return this.columnNetwork_number;
+                    return this.columnNetworkNumber;
                 }
             }
             
@@ -1043,17 +1043,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ComputerRow AddComputerRow(int Location, string Operating_system, decimal Cost, int Life_time, int Max_life_time, int User, int Network_number, int Accessories, int Purchase_ID, int Repair_ID) {
+            public ComputerRow AddComputerRow(int Location, string OperatingSystem, decimal Cost, int LifeTime, int MaxLifeTime, int User, int NetworkNumber, int Accessories, int Purchase_ID, int Repair_ID) {
                 ComputerRow rowComputerRow = ((ComputerRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Location,
-                        Operating_system,
+                        OperatingSystem,
                         Cost,
-                        Life_time,
-                        Max_life_time,
+                        LifeTime,
+                        MaxLifeTime,
                         User,
-                        Network_number,
+                        NetworkNumber,
                         Accessories,
                         Purchase_ID,
                         Repair_ID};
@@ -1088,12 +1088,12 @@ namespace KR1 {
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
                 this.columnLocation = base.Columns["Location"];
-                this.columnOperating_system = base.Columns["Operating system"];
+                this.columnOperatingSystem = base.Columns["OperatingSystem"];
                 this.columnCost = base.Columns["Cost"];
-                this.columnLife_time = base.Columns["Life time"];
-                this.columnMax_life_time = base.Columns["Max life time"];
+                this.columnLifeTime = base.Columns["LifeTime"];
+                this.columnMaxLifeTime = base.Columns["MaxLifeTime"];
                 this.columnUser = base.Columns["User"];
-                this.columnNetwork_number = base.Columns["Network number"];
+                this.columnNetworkNumber = base.Columns["NetworkNumber"];
                 this.columnAccessories = base.Columns["Accessories"];
                 this.columnPurchase_ID = base.Columns["Purchase_ID"];
                 this.columnRepair_ID = base.Columns["Repair_ID"];
@@ -1106,18 +1106,18 @@ namespace KR1 {
                 base.Columns.Add(this.columnID);
                 this.columnLocation = new global::System.Data.DataColumn("Location", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnLocation);
-                this.columnOperating_system = new global::System.Data.DataColumn("Operating system", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnOperating_system);
+                this.columnOperatingSystem = new global::System.Data.DataColumn("OperatingSystem", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnOperatingSystem);
                 this.columnCost = new global::System.Data.DataColumn("Cost", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCost);
-                this.columnLife_time = new global::System.Data.DataColumn("Life time", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnLife_time);
-                this.columnMax_life_time = new global::System.Data.DataColumn("Max life time", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnMax_life_time);
+                this.columnLifeTime = new global::System.Data.DataColumn("LifeTime", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnLifeTime);
+                this.columnMaxLifeTime = new global::System.Data.DataColumn("MaxLifeTime", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnMaxLifeTime);
                 this.columnUser = new global::System.Data.DataColumn("User", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnUser);
-                this.columnNetwork_number = new global::System.Data.DataColumn("Network number", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNetwork_number);
+                this.columnNetworkNumber = new global::System.Data.DataColumn("NetworkNumber", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNetworkNumber);
                 this.columnAccessories = new global::System.Data.DataColumn("Accessories", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnAccessories);
                 this.columnPurchase_ID = new global::System.Data.DataColumn("Purchase_ID", typeof(int), null, global::System.Data.MappingType.Element);
@@ -1131,7 +1131,7 @@ namespace KR1 {
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
-                this.columnOperating_system.MaxLength = 50;
+                this.columnOperatingSystem.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1269,11 +1269,11 @@ namespace KR1 {
             
             private global::System.Data.DataColumn columnSurname;
             
-            private global::System.Data.DataColumn columnEmployee_name;
+            private global::System.Data.DataColumn columnEmployeeName;
             
             private global::System.Data.DataColumn columnPatronymic;
             
-            private global::System.Data.DataColumn columnNetwork_access;
+            private global::System.Data.DataColumn columnNetworkAccess;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -1326,9 +1326,9 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Employee_nameColumn {
+            public global::System.Data.DataColumn EmployeeNameColumn {
                 get {
-                    return this.columnEmployee_name;
+                    return this.columnEmployeeName;
                 }
             }
             
@@ -1342,9 +1342,9 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Network_accessColumn {
+            public global::System.Data.DataColumn NetworkAccessColumn {
                 get {
-                    return this.columnNetwork_access;
+                    return this.columnNetworkAccess;
                 }
             }
             
@@ -1385,14 +1385,14 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public EmployeeRow AddEmployeeRow(string Surname, string Employee_name, string Patronymic, bool Network_access) {
+            public EmployeeRow AddEmployeeRow(string Surname, string EmployeeName, string Patronymic, bool NetworkAccess) {
                 EmployeeRow rowEmployeeRow = ((EmployeeRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Surname,
-                        Employee_name,
+                        EmployeeName,
                         Patronymic,
-                        Network_access};
+                        NetworkAccess};
                 rowEmployeeRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowEmployeeRow);
                 return rowEmployeeRow;
@@ -1424,9 +1424,9 @@ namespace KR1 {
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
                 this.columnSurname = base.Columns["Surname"];
-                this.columnEmployee_name = base.Columns["Employee name"];
+                this.columnEmployeeName = base.Columns["EmployeeName"];
                 this.columnPatronymic = base.Columns["Patronymic"];
-                this.columnNetwork_access = base.Columns["Network access"];
+                this.columnNetworkAccess = base.Columns["NetworkAccess"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -1436,12 +1436,12 @@ namespace KR1 {
                 base.Columns.Add(this.columnID);
                 this.columnSurname = new global::System.Data.DataColumn("Surname", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnSurname);
-                this.columnEmployee_name = new global::System.Data.DataColumn("Employee name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEmployee_name);
+                this.columnEmployeeName = new global::System.Data.DataColumn("EmployeeName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEmployeeName);
                 this.columnPatronymic = new global::System.Data.DataColumn("Patronymic", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnPatronymic);
-                this.columnNetwork_access = new global::System.Data.DataColumn("Network access", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNetwork_access);
+                this.columnNetworkAccess = new global::System.Data.DataColumn("NetworkAccess", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNetworkAccess);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -1450,7 +1450,7 @@ namespace KR1 {
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
                 this.columnSurname.MaxLength = 50;
-                this.columnEmployee_name.MaxLength = 50;
+                this.columnEmployeeName.MaxLength = 50;
                 this.columnPatronymic.MaxLength = 50;
             }
             
@@ -1920,13 +1920,13 @@ namespace KR1 {
             
             private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnCommunication_type;
+            private global::System.Data.DataColumn columnCommunicationType;
             
             private global::System.Data.DataColumn columnTopology;
             
-            private global::System.Data.DataColumn columnInternet_access;
+            private global::System.Data.DataColumn columnInternetAccess;
             
-            private global::System.Data.DataColumn columnIP_adress;
+            private global::System.Data.DataColumn columnIPAdress;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -1971,9 +1971,9 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Communication_typeColumn {
+            public global::System.Data.DataColumn CommunicationTypeColumn {
                 get {
-                    return this.columnCommunication_type;
+                    return this.columnCommunicationType;
                 }
             }
             
@@ -1987,17 +1987,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Internet_accessColumn {
+            public global::System.Data.DataColumn InternetAccessColumn {
                 get {
-                    return this.columnInternet_access;
+                    return this.columnInternetAccess;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn IP_adressColumn {
+            public global::System.Data.DataColumn IPAdressColumn {
                 get {
-                    return this.columnIP_adress;
+                    return this.columnIPAdress;
                 }
             }
             
@@ -2038,14 +2038,14 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public NetworkRow AddNetworkRow(string Communication_type, string Topology, bool Internet_access, string IP_adress) {
+            public NetworkRow AddNetworkRow(string CommunicationType, string Topology, bool InternetAccess, string IPAdress) {
                 NetworkRow rowNetworkRow = ((NetworkRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Communication_type,
+                        CommunicationType,
                         Topology,
-                        Internet_access,
-                        IP_adress};
+                        InternetAccess,
+                        IPAdress};
                 rowNetworkRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowNetworkRow);
                 return rowNetworkRow;
@@ -2076,10 +2076,10 @@ namespace KR1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
-                this.columnCommunication_type = base.Columns["Communication type"];
+                this.columnCommunicationType = base.Columns["CommunicationType"];
                 this.columnTopology = base.Columns["Topology"];
-                this.columnInternet_access = base.Columns["Internet access"];
-                this.columnIP_adress = base.Columns["IP adress"];
+                this.columnInternetAccess = base.Columns["InternetAccess"];
+                this.columnIPAdress = base.Columns["IPAdress"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2087,14 +2087,14 @@ namespace KR1 {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnCommunication_type = new global::System.Data.DataColumn("Communication type", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnCommunication_type);
+                this.columnCommunicationType = new global::System.Data.DataColumn("CommunicationType", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnCommunicationType);
                 this.columnTopology = new global::System.Data.DataColumn("Topology", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTopology);
-                this.columnInternet_access = new global::System.Data.DataColumn("Internet access", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnInternet_access);
-                this.columnIP_adress = new global::System.Data.DataColumn("IP adress", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnIP_adress);
+                this.columnInternetAccess = new global::System.Data.DataColumn("InternetAccess", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnInternetAccess);
+                this.columnIPAdress = new global::System.Data.DataColumn("IPAdress", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnIPAdress);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -2102,9 +2102,9 @@ namespace KR1 {
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
-                this.columnCommunication_type.MaxLength = 50;
+                this.columnCommunicationType.MaxLength = 50;
                 this.columnTopology.MaxLength = 50;
-                this.columnIP_adress.MaxLength = 50;
+                this.columnIPAdress.MaxLength = 50;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2240,7 +2240,7 @@ namespace KR1 {
             
             private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnProvider_name;
+            private global::System.Data.DataColumn columnProviderName;
             
             private global::System.Data.DataColumn columnTelephone;
             
@@ -2289,9 +2289,9 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Provider_nameColumn {
+            public global::System.Data.DataColumn ProviderNameColumn {
                 get {
-                    return this.columnProvider_name;
+                    return this.columnProviderName;
                 }
             }
             
@@ -2348,11 +2348,11 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public ProviderRow AddProviderRow(string Provider_name, string Telephone, int Adress) {
+            public ProviderRow AddProviderRow(string ProviderName, string Telephone, int Adress) {
                 ProviderRow rowProviderRow = ((ProviderRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Provider_name,
+                        ProviderName,
                         Telephone,
                         Adress};
                 rowProviderRow.ItemArray = columnValuesArray;
@@ -2385,7 +2385,7 @@ namespace KR1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
-                this.columnProvider_name = base.Columns["Provider name"];
+                this.columnProviderName = base.Columns["ProviderName"];
                 this.columnTelephone = base.Columns["Telephone"];
                 this.columnAdress = base.Columns["Adress"];
             }
@@ -2395,8 +2395,8 @@ namespace KR1 {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnProvider_name = new global::System.Data.DataColumn("Provider name", typeof(string), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnProvider_name);
+                this.columnProviderName = new global::System.Data.DataColumn("ProviderName", typeof(string), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnProviderName);
                 this.columnTelephone = new global::System.Data.DataColumn("Telephone", typeof(string), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnTelephone);
                 this.columnAdress = new global::System.Data.DataColumn("Adress", typeof(int), null, global::System.Data.MappingType.Element);
@@ -2408,7 +2408,7 @@ namespace KR1 {
                 this.columnID.AutoIncrementStep = -1;
                 this.columnID.AllowDBNull = false;
                 this.columnID.Unique = true;
-                this.columnProvider_name.MaxLength = 50;
+                this.columnProviderName.MaxLength = 50;
                 this.columnTelephone.MaxLength = 50;
             }
             
@@ -2549,11 +2549,11 @@ namespace KR1 {
             
             private global::System.Data.DataColumn columnProvider;
             
-            private global::System.Data.DataColumn columnDelivery_date;
+            private global::System.Data.DataColumn columnDeliveryDate;
             
-            private global::System.Data.DataColumn columnGuarantee_period;
+            private global::System.Data.DataColumn columnGuaranteePeriod;
             
-            private global::System.Data.DataColumn columnPurchase_amount;
+            private global::System.Data.DataColumn columnPurchaseAmount;
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
@@ -2614,25 +2614,25 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Delivery_dateColumn {
+            public global::System.Data.DataColumn DeliveryDateColumn {
                 get {
-                    return this.columnDelivery_date;
+                    return this.columnDeliveryDate;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Guarantee_periodColumn {
+            public global::System.Data.DataColumn GuaranteePeriodColumn {
                 get {
-                    return this.columnGuarantee_period;
+                    return this.columnGuaranteePeriod;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Purchase_amountColumn {
+            public global::System.Data.DataColumn PurchaseAmountColumn {
                 get {
-                    return this.columnPurchase_amount;
+                    return this.columnPurchaseAmount;
                 }
             }
             
@@ -2673,15 +2673,15 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public PurchasesRow AddPurchasesRow(bool Efficiency, int Provider, System.DateTime Delivery_date, int Guarantee_period, decimal Purchase_amount) {
+            public PurchasesRow AddPurchasesRow(bool Efficiency, int Provider, System.DateTime DeliveryDate, int GuaranteePeriod, decimal PurchaseAmount) {
                 PurchasesRow rowPurchasesRow = ((PurchasesRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
                         Efficiency,
                         Provider,
-                        Delivery_date,
-                        Guarantee_period,
-                        Purchase_amount};
+                        DeliveryDate,
+                        GuaranteePeriod,
+                        PurchaseAmount};
                 rowPurchasesRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowPurchasesRow);
                 return rowPurchasesRow;
@@ -2714,9 +2714,9 @@ namespace KR1 {
                 this.columnID = base.Columns["ID"];
                 this.columnEfficiency = base.Columns["Efficiency"];
                 this.columnProvider = base.Columns["Provider"];
-                this.columnDelivery_date = base.Columns["Delivery date"];
-                this.columnGuarantee_period = base.Columns["Guarantee period"];
-                this.columnPurchase_amount = base.Columns["Purchase amount"];
+                this.columnDeliveryDate = base.Columns["DeliveryDate"];
+                this.columnGuaranteePeriod = base.Columns["GuaranteePeriod"];
+                this.columnPurchaseAmount = base.Columns["PurchaseAmount"];
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -2728,12 +2728,12 @@ namespace KR1 {
                 base.Columns.Add(this.columnEfficiency);
                 this.columnProvider = new global::System.Data.DataColumn("Provider", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnProvider);
-                this.columnDelivery_date = new global::System.Data.DataColumn("Delivery date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnDelivery_date);
-                this.columnGuarantee_period = new global::System.Data.DataColumn("Guarantee period", typeof(int), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnGuarantee_period);
-                this.columnPurchase_amount = new global::System.Data.DataColumn("Purchase amount", typeof(decimal), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnPurchase_amount);
+                this.columnDeliveryDate = new global::System.Data.DataColumn("DeliveryDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnDeliveryDate);
+                this.columnGuaranteePeriod = new global::System.Data.DataColumn("GuaranteePeriod", typeof(int), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnGuaranteePeriod);
+                this.columnPurchaseAmount = new global::System.Data.DataColumn("PurchaseAmount", typeof(decimal), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnPurchaseAmount);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
                                 this.columnID}, true));
                 this.columnID.AutoIncrement = true;
@@ -2876,11 +2876,11 @@ namespace KR1 {
             
             private global::System.Data.DataColumn columnID;
             
-            private global::System.Data.DataColumn columnStart_date;
+            private global::System.Data.DataColumn columnStartDate;
             
-            private global::System.Data.DataColumn columnEnd_date;
+            private global::System.Data.DataColumn columnEndDate;
             
-            private global::System.Data.DataColumn columnNeed_to_write_off;
+            private global::System.Data.DataColumn columnNeedToWriteOff;
             
             private global::System.Data.DataColumn columnCost;
             
@@ -2927,25 +2927,25 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Start_dateColumn {
+            public global::System.Data.DataColumn StartDateColumn {
                 get {
-                    return this.columnStart_date;
+                    return this.columnStartDate;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn End_dateColumn {
+            public global::System.Data.DataColumn EndDateColumn {
                 get {
-                    return this.columnEnd_date;
+                    return this.columnEndDate;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public global::System.Data.DataColumn Need_to_write_offColumn {
+            public global::System.Data.DataColumn NeedToWriteOffColumn {
                 get {
-                    return this.columnNeed_to_write_off;
+                    return this.columnNeedToWriteOff;
                 }
             }
             
@@ -2994,13 +2994,13 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public RepairRow AddRepairRow(System.DateTime Start_date, System.DateTime End_date, bool Need_to_write_off, decimal Cost) {
+            public RepairRow AddRepairRow(System.DateTime StartDate, System.DateTime EndDate, bool NeedToWriteOff, decimal Cost) {
                 RepairRow rowRepairRow = ((RepairRow)(this.NewRow()));
                 object[] columnValuesArray = new object[] {
                         null,
-                        Start_date,
-                        End_date,
-                        Need_to_write_off,
+                        StartDate,
+                        EndDate,
+                        NeedToWriteOff,
                         Cost};
                 rowRepairRow.ItemArray = columnValuesArray;
                 this.Rows.Add(rowRepairRow);
@@ -3032,9 +3032,9 @@ namespace KR1 {
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
             internal void InitVars() {
                 this.columnID = base.Columns["ID"];
-                this.columnStart_date = base.Columns["Start date"];
-                this.columnEnd_date = base.Columns["End date"];
-                this.columnNeed_to_write_off = base.Columns["Need to write off"];
+                this.columnStartDate = base.Columns["StartDate"];
+                this.columnEndDate = base.Columns["EndDate"];
+                this.columnNeedToWriteOff = base.Columns["NeedToWriteOff"];
                 this.columnCost = base.Columns["Cost"];
             }
             
@@ -3043,12 +3043,12 @@ namespace KR1 {
             private void InitClass() {
                 this.columnID = new global::System.Data.DataColumn("ID", typeof(int), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnID);
-                this.columnStart_date = new global::System.Data.DataColumn("Start date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnStart_date);
-                this.columnEnd_date = new global::System.Data.DataColumn("End date", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnEnd_date);
-                this.columnNeed_to_write_off = new global::System.Data.DataColumn("Need to write off", typeof(bool), null, global::System.Data.MappingType.Element);
-                base.Columns.Add(this.columnNeed_to_write_off);
+                this.columnStartDate = new global::System.Data.DataColumn("StartDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnStartDate);
+                this.columnEndDate = new global::System.Data.DataColumn("EndDate", typeof(global::System.DateTime), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnEndDate);
+                this.columnNeedToWriteOff = new global::System.Data.DataColumn("NeedToWriteOff", typeof(bool), null, global::System.Data.MappingType.Element);
+                base.Columns.Add(this.columnNeedToWriteOff);
                 this.columnCost = new global::System.Data.DataColumn("Cost", typeof(decimal), null, global::System.Data.MappingType.Element);
                 base.Columns.Add(this.columnCost);
                 this.Constraints.Add(new global::System.Data.UniqueConstraint("Constraint1", new global::System.Data.DataColumn[] {
@@ -3628,17 +3628,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Operating_system {
+            public string OperatingSystem {
                 get {
                     try {
-                        return ((string)(this[this.tableComputer.Operating_systemColumn]));
+                        return ((string)(this[this.tableComputer.OperatingSystemColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Operating system\' в таблице \'Computer\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'OperatingSystem\' в таблице \'Computer\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableComputer.Operating_systemColumn] = value;
+                    this[this.tableComputer.OperatingSystemColumn] = value;
                 }
             }
             
@@ -3660,33 +3660,33 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Life_time {
+            public int LifeTime {
                 get {
                     try {
-                        return ((int)(this[this.tableComputer.Life_timeColumn]));
+                        return ((int)(this[this.tableComputer.LifeTimeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Life time\' в таблице \'Computer\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'LifeTime\' в таблице \'Computer\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableComputer.Life_timeColumn] = value;
+                    this[this.tableComputer.LifeTimeColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Max_life_time {
+            public int MaxLifeTime {
                 get {
                     try {
-                        return ((int)(this[this.tableComputer.Max_life_timeColumn]));
+                        return ((int)(this[this.tableComputer.MaxLifeTimeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Max life time\' в таблице \'Computer\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'MaxLifeTime\' в таблице \'Computer\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableComputer.Max_life_timeColumn] = value;
+                    this[this.tableComputer.MaxLifeTimeColumn] = value;
                 }
             }
             
@@ -3708,17 +3708,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Network_number {
+            public int NetworkNumber {
                 get {
                     try {
-                        return ((int)(this[this.tableComputer.Network_numberColumn]));
+                        return ((int)(this[this.tableComputer.NetworkNumberColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Network number\' в таблице \'Computer\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'NetworkNumber\' в таблице \'Computer\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableComputer.Network_numberColumn] = value;
+                    this[this.tableComputer.NetworkNumberColumn] = value;
                 }
             }
             
@@ -3784,14 +3784,14 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsOperating_systemNull() {
-                return this.IsNull(this.tableComputer.Operating_systemColumn);
+            public bool IsOperatingSystemNull() {
+                return this.IsNull(this.tableComputer.OperatingSystemColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetOperating_systemNull() {
-                this[this.tableComputer.Operating_systemColumn] = global::System.Convert.DBNull;
+            public void SetOperatingSystemNull() {
+                this[this.tableComputer.OperatingSystemColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3808,26 +3808,26 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsLife_timeNull() {
-                return this.IsNull(this.tableComputer.Life_timeColumn);
+            public bool IsLifeTimeNull() {
+                return this.IsNull(this.tableComputer.LifeTimeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetLife_timeNull() {
-                this[this.tableComputer.Life_timeColumn] = global::System.Convert.DBNull;
+            public void SetLifeTimeNull() {
+                this[this.tableComputer.LifeTimeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsMax_life_timeNull() {
-                return this.IsNull(this.tableComputer.Max_life_timeColumn);
+            public bool IsMaxLifeTimeNull() {
+                return this.IsNull(this.tableComputer.MaxLifeTimeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetMax_life_timeNull() {
-                this[this.tableComputer.Max_life_timeColumn] = global::System.Convert.DBNull;
+            public void SetMaxLifeTimeNull() {
+                this[this.tableComputer.MaxLifeTimeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3844,14 +3844,14 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNetwork_numberNull() {
-                return this.IsNull(this.tableComputer.Network_numberColumn);
+            public bool IsNetworkNumberNull() {
+                return this.IsNull(this.tableComputer.NetworkNumberColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNetwork_numberNull() {
-                this[this.tableComputer.Network_numberColumn] = global::System.Convert.DBNull;
+            public void SetNetworkNumberNull() {
+                this[this.tableComputer.NetworkNumberColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -3934,17 +3934,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Employee_name {
+            public string EmployeeName {
                 get {
                     try {
-                        return ((string)(this[this.tableEmployee.Employee_nameColumn]));
+                        return ((string)(this[this.tableEmployee.EmployeeNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Employee name\' в таблице \'Employee\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'EmployeeName\' в таблице \'Employee\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableEmployee.Employee_nameColumn] = value;
+                    this[this.tableEmployee.EmployeeNameColumn] = value;
                 }
             }
             
@@ -3966,17 +3966,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Network_access {
+            public bool NetworkAccess {
                 get {
                     try {
-                        return ((bool)(this[this.tableEmployee.Network_accessColumn]));
+                        return ((bool)(this[this.tableEmployee.NetworkAccessColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Network access\' в таблице \'Employee\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'NetworkAccess\' в таблице \'Employee\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableEmployee.Network_accessColumn] = value;
+                    this[this.tableEmployee.NetworkAccessColumn] = value;
                 }
             }
             
@@ -3994,14 +3994,14 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsEmployee_nameNull() {
-                return this.IsNull(this.tableEmployee.Employee_nameColumn);
+            public bool IsEmployeeNameNull() {
+                return this.IsNull(this.tableEmployee.EmployeeNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetEmployee_nameNull() {
-                this[this.tableEmployee.Employee_nameColumn] = global::System.Convert.DBNull;
+            public void SetEmployeeNameNull() {
+                this[this.tableEmployee.EmployeeNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4018,14 +4018,14 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNetwork_accessNull() {
-                return this.IsNull(this.tableEmployee.Network_accessColumn);
+            public bool IsNetworkAccessNull() {
+                return this.IsNull(this.tableEmployee.NetworkAccessColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNetwork_accessNull() {
-                this[this.tableEmployee.Network_accessColumn] = global::System.Convert.DBNull;
+            public void SetNetworkAccessNull() {
+                this[this.tableEmployee.NetworkAccessColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4222,17 +4222,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Communication_type {
+            public string CommunicationType {
                 get {
                     try {
-                        return ((string)(this[this.tableNetwork.Communication_typeColumn]));
+                        return ((string)(this[this.tableNetwork.CommunicationTypeColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Communication type\' в таблице \'Network\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'CommunicationType\' в таблице \'Network\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableNetwork.Communication_typeColumn] = value;
+                    this[this.tableNetwork.CommunicationTypeColumn] = value;
                 }
             }
             
@@ -4254,46 +4254,46 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Internet_access {
+            public bool InternetAccess {
                 get {
                     try {
-                        return ((bool)(this[this.tableNetwork.Internet_accessColumn]));
+                        return ((bool)(this[this.tableNetwork.InternetAccessColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Internet access\' в таблице \'Network\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'InternetAccess\' в таблице \'Network\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableNetwork.Internet_accessColumn] = value;
+                    this[this.tableNetwork.InternetAccessColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string IP_adress {
+            public string IPAdress {
                 get {
                     try {
-                        return ((string)(this[this.tableNetwork.IP_adressColumn]));
+                        return ((string)(this[this.tableNetwork.IPAdressColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'IP adress\' в таблице \'Network\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'IPAdress\' в таблице \'Network\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableNetwork.IP_adressColumn] = value;
+                    this[this.tableNetwork.IPAdressColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsCommunication_typeNull() {
-                return this.IsNull(this.tableNetwork.Communication_typeColumn);
+            public bool IsCommunicationTypeNull() {
+                return this.IsNull(this.tableNetwork.CommunicationTypeColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetCommunication_typeNull() {
-                this[this.tableNetwork.Communication_typeColumn] = global::System.Convert.DBNull;
+            public void SetCommunicationTypeNull() {
+                this[this.tableNetwork.CommunicationTypeColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4310,26 +4310,26 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsInternet_accessNull() {
-                return this.IsNull(this.tableNetwork.Internet_accessColumn);
+            public bool IsInternetAccessNull() {
+                return this.IsNull(this.tableNetwork.InternetAccessColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetInternet_accessNull() {
-                this[this.tableNetwork.Internet_accessColumn] = global::System.Convert.DBNull;
+            public void SetInternetAccessNull() {
+                this[this.tableNetwork.InternetAccessColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsIP_adressNull() {
-                return this.IsNull(this.tableNetwork.IP_adressColumn);
+            public bool IsIPAdressNull() {
+                return this.IsNull(this.tableNetwork.IPAdressColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetIP_adressNull() {
-                this[this.tableNetwork.IP_adressColumn] = global::System.Convert.DBNull;
+            public void SetIPAdressNull() {
+                this[this.tableNetwork.IPAdressColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4360,17 +4360,17 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public string Provider_name {
+            public string ProviderName {
                 get {
                     try {
-                        return ((string)(this[this.tableProvider.Provider_nameColumn]));
+                        return ((string)(this[this.tableProvider.ProviderNameColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Provider name\' в таблице \'Provider\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'ProviderName\' в таблице \'Provider\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableProvider.Provider_nameColumn] = value;
+                    this[this.tableProvider.ProviderNameColumn] = value;
                 }
             }
             
@@ -4408,14 +4408,14 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsProvider_nameNull() {
-                return this.IsNull(this.tableProvider.Provider_nameColumn);
+            public bool IsProviderNameNull() {
+                return this.IsNull(this.tableProvider.ProviderNameColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetProvider_nameNull() {
-                this[this.tableProvider.Provider_nameColumn] = global::System.Convert.DBNull;
+            public void SetProviderNameNull() {
+                this[this.tableProvider.ProviderNameColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -4502,49 +4502,49 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime Delivery_date {
+            public System.DateTime DeliveryDate {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tablePurchases.Delivery_dateColumn]));
+                        return ((global::System.DateTime)(this[this.tablePurchases.DeliveryDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Delivery date\' в таблице \'Purchases\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'DeliveryDate\' в таблице \'Purchases\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePurchases.Delivery_dateColumn] = value;
+                    this[this.tablePurchases.DeliveryDateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public int Guarantee_period {
+            public int GuaranteePeriod {
                 get {
                     try {
-                        return ((int)(this[this.tablePurchases.Guarantee_periodColumn]));
+                        return ((int)(this[this.tablePurchases.GuaranteePeriodColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Guarantee period\' в таблице \'Purchases\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'GuaranteePeriod\' в таблице \'Purchases\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePurchases.Guarantee_periodColumn] = value;
+                    this[this.tablePurchases.GuaranteePeriodColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public decimal Purchase_amount {
+            public decimal PurchaseAmount {
                 get {
                     try {
-                        return ((decimal)(this[this.tablePurchases.Purchase_amountColumn]));
+                        return ((decimal)(this[this.tablePurchases.PurchaseAmountColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Purchase amount\' в таблице \'Purchases\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'PurchaseAmount\' в таблице \'Purchases\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tablePurchases.Purchase_amountColumn] = value;
+                    this[this.tablePurchases.PurchaseAmountColumn] = value;
                 }
             }
             
@@ -4574,38 +4574,38 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsDelivery_dateNull() {
-                return this.IsNull(this.tablePurchases.Delivery_dateColumn);
+            public bool IsDeliveryDateNull() {
+                return this.IsNull(this.tablePurchases.DeliveryDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetDelivery_dateNull() {
-                this[this.tablePurchases.Delivery_dateColumn] = global::System.Convert.DBNull;
+            public void SetDeliveryDateNull() {
+                this[this.tablePurchases.DeliveryDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsGuarantee_periodNull() {
-                return this.IsNull(this.tablePurchases.Guarantee_periodColumn);
+            public bool IsGuaranteePeriodNull() {
+                return this.IsNull(this.tablePurchases.GuaranteePeriodColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetGuarantee_periodNull() {
-                this[this.tablePurchases.Guarantee_periodColumn] = global::System.Convert.DBNull;
+            public void SetGuaranteePeriodNull() {
+                this[this.tablePurchases.GuaranteePeriodColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsPurchase_amountNull() {
-                return this.IsNull(this.tablePurchases.Purchase_amountColumn);
+            public bool IsPurchaseAmountNull() {
+                return this.IsNull(this.tablePurchases.PurchaseAmountColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetPurchase_amountNull() {
-                this[this.tablePurchases.Purchase_amountColumn] = global::System.Convert.DBNull;
+            public void SetPurchaseAmountNull() {
+                this[this.tablePurchases.PurchaseAmountColumn] = global::System.Convert.DBNull;
             }
         }
         
@@ -4636,49 +4636,49 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime Start_date {
+            public System.DateTime StartDate {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableRepair.Start_dateColumn]));
+                        return ((global::System.DateTime)(this[this.tableRepair.StartDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Start date\' в таблице \'Repair\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'StartDate\' в таблице \'Repair\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRepair.Start_dateColumn] = value;
+                    this[this.tableRepair.StartDateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public System.DateTime End_date {
+            public System.DateTime EndDate {
                 get {
                     try {
-                        return ((global::System.DateTime)(this[this.tableRepair.End_dateColumn]));
+                        return ((global::System.DateTime)(this[this.tableRepair.EndDateColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'End date\' в таблице \'Repair\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'EndDate\' в таблице \'Repair\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRepair.End_dateColumn] = value;
+                    this[this.tableRepair.EndDateColumn] = value;
                 }
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool Need_to_write_off {
+            public bool NeedToWriteOff {
                 get {
                     try {
-                        return ((bool)(this[this.tableRepair.Need_to_write_offColumn]));
+                        return ((bool)(this[this.tableRepair.NeedToWriteOffColumn]));
                     }
                     catch (global::System.InvalidCastException e) {
-                        throw new global::System.Data.StrongTypingException("Значение для столбца \'Need to write off\' в таблице \'Repair\' равно DBNull.", e);
+                        throw new global::System.Data.StrongTypingException("Значение для столбца \'NeedToWriteOff\' в таблице \'Repair\' равно DBNull.", e);
                     }
                 }
                 set {
-                    this[this.tableRepair.Need_to_write_offColumn] = value;
+                    this[this.tableRepair.NeedToWriteOffColumn] = value;
                 }
             }
             
@@ -4700,38 +4700,38 @@ namespace KR1 {
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsStart_dateNull() {
-                return this.IsNull(this.tableRepair.Start_dateColumn);
+            public bool IsStartDateNull() {
+                return this.IsNull(this.tableRepair.StartDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetStart_dateNull() {
-                this[this.tableRepair.Start_dateColumn] = global::System.Convert.DBNull;
+            public void SetStartDateNull() {
+                this[this.tableRepair.StartDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsEnd_dateNull() {
-                return this.IsNull(this.tableRepair.End_dateColumn);
+            public bool IsEndDateNull() {
+                return this.IsNull(this.tableRepair.EndDateColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetEnd_dateNull() {
-                this[this.tableRepair.End_dateColumn] = global::System.Convert.DBNull;
+            public void SetEndDateNull() {
+                this[this.tableRepair.EndDateColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public bool IsNeed_to_write_offNull() {
-                return this.IsNull(this.tableRepair.Need_to_write_offColumn);
+            public bool IsNeedToWriteOffNull() {
+                return this.IsNull(this.tableRepair.NeedToWriteOffColumn);
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
             [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
-            public void SetNeed_to_write_offNull() {
-                this[this.tableRepair.Need_to_write_offColumn] = global::System.Convert.DBNull;
+            public void SetNeedToWriteOffNull() {
+                this[this.tableRepair.NeedToWriteOffColumn] = global::System.Convert.DBNull;
             }
             
             [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -5647,35 +5647,35 @@ namespace KR1.BD_KRDataSetTableAdapters {
             tableMapping.DataSetTable = "Computer";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("Location", "Location");
-            tableMapping.ColumnMappings.Add("Operating system", "Operating system");
+            tableMapping.ColumnMappings.Add("OperatingSystem", "OperatingSystem");
             tableMapping.ColumnMappings.Add("Cost", "Cost");
-            tableMapping.ColumnMappings.Add("Life time", "Life time");
-            tableMapping.ColumnMappings.Add("Max life time", "Max life time");
+            tableMapping.ColumnMappings.Add("LifeTime", "LifeTime");
+            tableMapping.ColumnMappings.Add("MaxLifeTime", "MaxLifeTime");
             tableMapping.ColumnMappings.Add("User", "User");
-            tableMapping.ColumnMappings.Add("Network number", "Network number");
+            tableMapping.ColumnMappings.Add("NetworkNumber", "NetworkNumber");
             tableMapping.ColumnMappings.Add("Accessories", "Accessories");
             tableMapping.ColumnMappings.Add("Purchase_ID", "Purchase_ID");
             tableMapping.ColumnMappings.Add("Repair_ID", "Repair_ID");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Computer` WHERE ((`ID` = ?) AND ((? = 1 AND `Location` IS NULL) OR (`Location` = ?)) AND ((? = 1 AND `Operating system` IS NULL) OR (`Operating system` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)) AND ((? = 1 AND `Life time` IS NULL) OR (`Life time` = ?)) AND ((? = 1 AND `Max life time` IS NULL) OR (`Max life time` = ?)) AND ((? = 1 AND `User` IS NULL) OR (`User` = ?)) AND ((? = 1 AND `Network number` IS NULL) OR (`Network number` = ?)) AND ((? = 1 AND `Accessories` IS NULL) OR (`Accessories` = ?)) AND ((? = 1 AND `Purchase_ID` IS NULL) OR (`Purchase_ID` = ?)) AND ((? = 1 AND `Repair_ID` IS NULL) OR (`Repair_ID` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Computer` WHERE ((`ID` = ?) AND ((? = 1 AND `Location` IS NULL) OR (`Location` = ?)) AND ((? = 1 AND `OperatingSystem` IS NULL) OR (`OperatingSystem` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)) AND ((? = 1 AND `LifeTime` IS NULL) OR (`LifeTime` = ?)) AND ((? = 1 AND `MaxLifeTime` IS NULL) OR (`MaxLifeTime` = ?)) AND ((? = 1 AND `User` IS NULL) OR (`User` = ?)) AND ((? = 1 AND `NetworkNumber` IS NULL) OR (`NetworkNumber` = ?)) AND ((? = 1 AND `Accessories` IS NULL) OR (`Accessories` = ?)) AND ((? = 1 AND `Purchase_ID` IS NULL) OR (`Purchase_ID` = ?)) AND ((? = 1 AND `Repair_ID` IS NULL) OR (`Repair_ID` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Location", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Location", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Location", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Location", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Operating_system", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Operating system", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Operating_system", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Operating system", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_OperatingSystem", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OperatingSystem", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_OperatingSystem", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OperatingSystem", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Cost", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Life time", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Life time", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Max_life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Max life time", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Max_life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Max life time", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_LifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LifeTime", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LifeTime", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_MaxLifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MaxLifeTime", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_MaxLifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MaxLifeTime", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Network_number", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network number", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Network_number", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network number", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_NetworkNumber", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkNumber", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NetworkNumber", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkNumber", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Accessories", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Accessories", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Accessories", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Accessories", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Purchase_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase_ID", global::System.Data.DataRowVersion.Original, true, null));
@@ -5684,49 +5684,49 @@ namespace KR1.BD_KRDataSetTableAdapters {
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Repair_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Repair_ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Computer` (`Location`, `Operating system`, `Cost`, `Life time`, `Max" +
-                " life time`, `User`, `Network number`, `Accessories`, `Purchase_ID`, `Repair_ID`" +
-                ") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Computer` (`Location`, `OperatingSystem`, `Cost`, `LifeTime`, `MaxLi" +
+                "feTime`, `User`, `NetworkNumber`, `Accessories`, `Purchase_ID`, `Repair_ID`) VAL" +
+                "UES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Location", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Location", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Operating_system", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Operating system", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("OperatingSystem", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OperatingSystem", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Life time", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Max_life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Max life time", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LifeTime", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("MaxLifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MaxLifeTime", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Network_number", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network number", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NetworkNumber", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkNumber", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Accessories", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Accessories", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Purchase_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase_ID", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Repair_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Repair_ID", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Computer` SET `Location` = ?, `Operating system` = ?, `Cost` = ?, `Life time` = ?, `Max life time` = ?, `User` = ?, `Network number` = ?, `Accessories` = ?, `Purchase_ID` = ?, `Repair_ID` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Location` IS NULL) OR (`Location` = ?)) AND ((? = 1 AND `Operating system` IS NULL) OR (`Operating system` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)) AND ((? = 1 AND `Life time` IS NULL) OR (`Life time` = ?)) AND ((? = 1 AND `Max life time` IS NULL) OR (`Max life time` = ?)) AND ((? = 1 AND `User` IS NULL) OR (`User` = ?)) AND ((? = 1 AND `Network number` IS NULL) OR (`Network number` = ?)) AND ((? = 1 AND `Accessories` IS NULL) OR (`Accessories` = ?)) AND ((? = 1 AND `Purchase_ID` IS NULL) OR (`Purchase_ID` = ?)) AND ((? = 1 AND `Repair_ID` IS NULL) OR (`Repair_ID` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Computer` SET `Location` = ?, `OperatingSystem` = ?, `Cost` = ?, `LifeTime` = ?, `MaxLifeTime` = ?, `User` = ?, `NetworkNumber` = ?, `Accessories` = ?, `Purchase_ID` = ?, `Repair_ID` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Location` IS NULL) OR (`Location` = ?)) AND ((? = 1 AND `OperatingSystem` IS NULL) OR (`OperatingSystem` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)) AND ((? = 1 AND `LifeTime` IS NULL) OR (`LifeTime` = ?)) AND ((? = 1 AND `MaxLifeTime` IS NULL) OR (`MaxLifeTime` = ?)) AND ((? = 1 AND `User` IS NULL) OR (`User` = ?)) AND ((? = 1 AND `NetworkNumber` IS NULL) OR (`NetworkNumber` = ?)) AND ((? = 1 AND `Accessories` IS NULL) OR (`Accessories` = ?)) AND ((? = 1 AND `Purchase_ID` IS NULL) OR (`Purchase_ID` = ?)) AND ((? = 1 AND `Repair_ID` IS NULL) OR (`Repair_ID` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Location", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Location", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Operating_system", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Operating system", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("OperatingSystem", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OperatingSystem", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Life time", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Max_life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Max life time", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("LifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LifeTime", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("MaxLifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MaxLifeTime", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Network_number", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network number", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NetworkNumber", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkNumber", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Accessories", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Accessories", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Purchase_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase_ID", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Repair_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Repair_ID", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Location", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Location", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Location", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Location", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Operating_system", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Operating system", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Operating_system", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Operating system", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_OperatingSystem", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OperatingSystem", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_OperatingSystem", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "OperatingSystem", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Cost", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Life time", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Life time", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Max_life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Max life time", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Max_life_time", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Max life time", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_LifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LifeTime", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_LifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "LifeTime", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_MaxLifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MaxLifeTime", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_MaxLifeTime", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "MaxLifeTime", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_User", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "User", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Network_number", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network number", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Network_number", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network number", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_NetworkNumber", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkNumber", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NetworkNumber", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkNumber", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Accessories", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Accessories", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Accessories", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Accessories", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Purchase_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase_ID", global::System.Data.DataRowVersion.Original, true, null));
@@ -5748,8 +5748,8 @@ namespace KR1.BD_KRDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Location, [Operating system], Cost, [Life time], [Max life time], [Use" +
-                "r], [Network number], Accessories, Purchase_ID, Repair_ID FROM Computer";
+            this._commandCollection[0].CommandText = "SELECT ID, Location, OperatingSystem, Cost, LifeTime, MaxLifeTime, [User], Networ" +
+                "kNumber, Accessories, Purchase_ID, Repair_ID FROM Computer";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -5810,7 +5810,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, global::System.Nullable<int> Original_Location, string Original_Operating_system, global::System.Nullable<decimal> Original_Cost, global::System.Nullable<int> Original_Life_time, global::System.Nullable<int> Original_Max_life_time, global::System.Nullable<int> Original_User, global::System.Nullable<int> Original_Network_number, global::System.Nullable<int> Original_Accessories, global::System.Nullable<int> Original_Purchase_ID, global::System.Nullable<int> Original_Repair_ID) {
+        public virtual int Delete(int Original_ID, global::System.Nullable<int> Original_Location, string Original_OperatingSystem, global::System.Nullable<decimal> Original_Cost, global::System.Nullable<int> Original_LifeTime, global::System.Nullable<int> Original_MaxLifeTime, global::System.Nullable<int> Original_User, global::System.Nullable<int> Original_NetworkNumber, global::System.Nullable<int> Original_Accessories, global::System.Nullable<int> Original_Purchase_ID, global::System.Nullable<int> Original_Repair_ID) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
             if ((Original_Location.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
@@ -5820,13 +5820,13 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Original_Operating_system == null)) {
+            if ((Original_OperatingSystem == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Operating_system));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_OperatingSystem));
             }
             if ((Original_Cost.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
@@ -5836,17 +5836,17 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Original_Life_time.HasValue == true)) {
+            if ((Original_LifeTime.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_Life_time.Value));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_LifeTime.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Original_Max_life_time.HasValue == true)) {
+            if ((Original_MaxLifeTime.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_Max_life_time.Value));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((int)(Original_MaxLifeTime.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
@@ -5860,9 +5860,9 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
-            if ((Original_Network_number.HasValue == true)) {
+            if ((Original_NetworkNumber.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[14].Value = ((int)(Original_Network_number.Value));
+                this.Adapter.DeleteCommand.Parameters[14].Value = ((int)(Original_NetworkNumber.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[13].Value = ((object)(1));
@@ -5912,18 +5912,18 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<int> Location, string Operating_system, global::System.Nullable<decimal> Cost, global::System.Nullable<int> Life_time, global::System.Nullable<int> Max_life_time, global::System.Nullable<int> User, global::System.Nullable<int> Network_number, global::System.Nullable<int> Accessories, global::System.Nullable<int> Purchase_ID, global::System.Nullable<int> Repair_ID) {
+        public virtual int Insert(global::System.Nullable<int> Location, string OperatingSystem, global::System.Nullable<decimal> Cost, global::System.Nullable<int> LifeTime, global::System.Nullable<int> MaxLifeTime, global::System.Nullable<int> User, global::System.Nullable<int> NetworkNumber, global::System.Nullable<int> Accessories, global::System.Nullable<int> Purchase_ID, global::System.Nullable<int> Repair_ID) {
             if ((Location.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((int)(Location.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((Operating_system == null)) {
+            if ((OperatingSystem == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Operating_system));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(OperatingSystem));
             }
             if ((Cost.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((decimal)(Cost.Value));
@@ -5931,14 +5931,14 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Life_time.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Life_time.Value));
+            if ((LifeTime.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(LifeTime.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Max_life_time.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(Max_life_time.Value));
+            if ((MaxLifeTime.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((int)(MaxLifeTime.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -5949,8 +5949,8 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            if ((Network_number.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(Network_number.Value));
+            if ((NetworkNumber.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[6].Value = ((int)(NetworkNumber.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[6].Value = global::System.DBNull.Value;
@@ -5995,23 +5995,23 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
         public virtual int Update(
                     global::System.Nullable<int> Location, 
-                    string Operating_system, 
+                    string OperatingSystem, 
                     global::System.Nullable<decimal> Cost, 
-                    global::System.Nullable<int> Life_time, 
-                    global::System.Nullable<int> Max_life_time, 
+                    global::System.Nullable<int> LifeTime, 
+                    global::System.Nullable<int> MaxLifeTime, 
                     global::System.Nullable<int> User, 
-                    global::System.Nullable<int> Network_number, 
+                    global::System.Nullable<int> NetworkNumber, 
                     global::System.Nullable<int> Accessories, 
                     global::System.Nullable<int> Purchase_ID, 
                     global::System.Nullable<int> Repair_ID, 
                     int Original_ID, 
                     global::System.Nullable<int> Original_Location, 
-                    string Original_Operating_system, 
+                    string Original_OperatingSystem, 
                     global::System.Nullable<decimal> Original_Cost, 
-                    global::System.Nullable<int> Original_Life_time, 
-                    global::System.Nullable<int> Original_Max_life_time, 
+                    global::System.Nullable<int> Original_LifeTime, 
+                    global::System.Nullable<int> Original_MaxLifeTime, 
                     global::System.Nullable<int> Original_User, 
-                    global::System.Nullable<int> Original_Network_number, 
+                    global::System.Nullable<int> Original_NetworkNumber, 
                     global::System.Nullable<int> Original_Accessories, 
                     global::System.Nullable<int> Original_Purchase_ID, 
                     global::System.Nullable<int> Original_Repair_ID) {
@@ -6021,11 +6021,11 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((Operating_system == null)) {
+            if ((OperatingSystem == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Operating_system));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(OperatingSystem));
             }
             if ((Cost.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((decimal)(Cost.Value));
@@ -6033,14 +6033,14 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Life_time.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Life_time.Value));
+            if ((LifeTime.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(LifeTime.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Max_life_time.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Max_life_time.Value));
+            if ((MaxLifeTime.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(MaxLifeTime.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -6051,8 +6051,8 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
-            if ((Network_number.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(Network_number.Value));
+            if ((NetworkNumber.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((int)(NetworkNumber.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
@@ -6084,13 +6084,13 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
-            if ((Original_Operating_system == null)) {
+            if ((Original_OperatingSystem == null)) {
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[14].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[13].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_Operating_system));
+                this.Adapter.UpdateCommand.Parameters[14].Value = ((string)(Original_OperatingSystem));
             }
             if ((Original_Cost.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(0));
@@ -6100,17 +6100,17 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[15].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[16].Value = global::System.DBNull.Value;
             }
-            if ((Original_Life_time.HasValue == true)) {
+            if ((Original_LifeTime.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_Life_time.Value));
+                this.Adapter.UpdateCommand.Parameters[18].Value = ((int)(Original_LifeTime.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[17].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[18].Value = global::System.DBNull.Value;
             }
-            if ((Original_Max_life_time.HasValue == true)) {
+            if ((Original_MaxLifeTime.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[20].Value = ((int)(Original_Max_life_time.Value));
+                this.Adapter.UpdateCommand.Parameters[20].Value = ((int)(Original_MaxLifeTime.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[19].Value = ((object)(1));
@@ -6124,9 +6124,9 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[21].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[22].Value = global::System.DBNull.Value;
             }
-            if ((Original_Network_number.HasValue == true)) {
+            if ((Original_NetworkNumber.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[24].Value = ((int)(Original_Network_number.Value));
+                this.Adapter.UpdateCommand.Parameters[24].Value = ((int)(Original_NetworkNumber.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[23].Value = ((object)(1));
@@ -6296,49 +6296,49 @@ namespace KR1.BD_KRDataSetTableAdapters {
             tableMapping.DataSetTable = "Employee";
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("Surname", "Surname");
-            tableMapping.ColumnMappings.Add("Employee name", "Employee name");
+            tableMapping.ColumnMappings.Add("EmployeeName", "EmployeeName");
             tableMapping.ColumnMappings.Add("Patronymic", "Patronymic");
-            tableMapping.ColumnMappings.Add("Network access", "Network access");
+            tableMapping.ColumnMappings.Add("NetworkAccess", "NetworkAccess");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Employee` WHERE ((`ID` = ?) AND ((? = 1 AND `Surname` IS NULL) OR (`Surname` = ?)) AND ((? = 1 AND `Employee name` IS NULL) OR (`Employee name` = ?)) AND ((? = 1 AND `Patronymic` IS NULL) OR (`Patronymic` = ?)) AND ((? = 1 AND `Network access` IS NULL) OR (`Network access` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Employee` WHERE ((`ID` = ?) AND ((? = 1 AND `Surname` IS NULL) OR (`Surname` = ?)) AND ((? = 1 AND `EmployeeName` IS NULL) OR (`EmployeeName` = ?)) AND ((? = 1 AND `Patronymic` IS NULL) OR (`Patronymic` = ?)) AND ((? = 1 AND `NetworkAccess` IS NULL) OR (`NetworkAccess` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Surname", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Surname", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Surname", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Surname", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Employee_name", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Employee name", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Employee_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Employee name", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_EmployeeName", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EmployeeName", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_EmployeeName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EmployeeName", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Patronymic", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Patronymic", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Patronymic", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Patronymic", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Network_access", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network access", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Network_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network access", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_NetworkAccess", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkAccess", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NetworkAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkAccess", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Employee` (`Surname`, `Employee name`, `Patronymic`, `Network access" +
-                "`) VALUES (?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Employee` (`Surname`, `EmployeeName`, `Patronymic`, `NetworkAccess`)" +
+                " VALUES (?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Surname", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Surname", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Employee_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Employee name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EmployeeName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EmployeeName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Patronymic", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Patronymic", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Network_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network access", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NetworkAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkAccess", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Employee` SET `Surname` = ?, `Employee name` = ?, `Patronymic` = ?, `Network access` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Surname` IS NULL) OR (`Surname` = ?)) AND ((? = 1 AND `Employee name` IS NULL) OR (`Employee name` = ?)) AND ((? = 1 AND `Patronymic` IS NULL) OR (`Patronymic` = ?)) AND ((? = 1 AND `Network access` IS NULL) OR (`Network access` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Employee` SET `Surname` = ?, `EmployeeName` = ?, `Patronymic` = ?, `NetworkAccess` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Surname` IS NULL) OR (`Surname` = ?)) AND ((? = 1 AND `EmployeeName` IS NULL) OR (`EmployeeName` = ?)) AND ((? = 1 AND `Patronymic` IS NULL) OR (`Patronymic` = ?)) AND ((? = 1 AND `NetworkAccess` IS NULL) OR (`NetworkAccess` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Surname", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Surname", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Employee_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Employee name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EmployeeName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EmployeeName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Patronymic", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Patronymic", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Network_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network access", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NetworkAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkAccess", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Surname", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Surname", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Surname", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Surname", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Employee_name", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Employee name", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Employee_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Employee name", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_EmployeeName", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EmployeeName", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_EmployeeName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EmployeeName", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Patronymic", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Patronymic", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Patronymic", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Patronymic", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Network_access", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network access", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Network_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Network access", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_NetworkAccess", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkAccess", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NetworkAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NetworkAccess", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -6354,7 +6354,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Surname, [Employee name], Patronymic, [Network access] FROM Employee";
+            this._commandCollection[0].CommandText = "SELECT ID, Surname, EmployeeName, Patronymic, NetworkAccess FROM Employee";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -6415,7 +6415,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, string Original_Surname, string Original_Employee_name, string Original_Patronymic, bool Original_Network_access) {
+        public virtual int Delete(int Original_ID, string Original_Surname, string Original_EmployeeName, string Original_Patronymic, bool Original_NetworkAccess) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
             if ((Original_Surname == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
@@ -6425,13 +6425,13 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Surname));
             }
-            if ((Original_Employee_name == null)) {
+            if ((Original_EmployeeName == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Employee_name));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_EmployeeName));
             }
             if ((Original_Patronymic == null)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
@@ -6442,7 +6442,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[6].Value = ((string)(Original_Patronymic));
             }
             this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_Network_access));
+            this.Adapter.DeleteCommand.Parameters[8].Value = ((bool)(Original_NetworkAccess));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6463,18 +6463,18 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Surname, string Employee_name, string Patronymic, bool Network_access) {
+        public virtual int Insert(string Surname, string EmployeeName, string Patronymic, bool NetworkAccess) {
             if ((Surname == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Surname));
             }
-            if ((Employee_name == null)) {
+            if ((EmployeeName == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Employee_name));
+                this.Adapter.InsertCommand.Parameters[1].Value = ((string)(EmployeeName));
             }
             if ((Patronymic == null)) {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -6482,7 +6482,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = ((string)(Patronymic));
             }
-            this.Adapter.InsertCommand.Parameters[3].Value = ((bool)(Network_access));
+            this.Adapter.InsertCommand.Parameters[3].Value = ((bool)(NetworkAccess));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -6503,18 +6503,18 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Surname, string Employee_name, string Patronymic, bool Network_access, int Original_ID, string Original_Surname, string Original_Employee_name, string Original_Patronymic, bool Original_Network_access) {
+        public virtual int Update(string Surname, string EmployeeName, string Patronymic, bool NetworkAccess, int Original_ID, string Original_Surname, string Original_EmployeeName, string Original_Patronymic, bool Original_NetworkAccess) {
             if ((Surname == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Surname));
             }
-            if ((Employee_name == null)) {
+            if ((EmployeeName == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Employee_name));
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(EmployeeName));
             }
             if ((Patronymic == null)) {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
@@ -6522,7 +6522,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = ((string)(Patronymic));
             }
-            this.Adapter.UpdateCommand.Parameters[3].Value = ((bool)(Network_access));
+            this.Adapter.UpdateCommand.Parameters[3].Value = ((bool)(NetworkAccess));
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_ID));
             if ((Original_Surname == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
@@ -6532,13 +6532,13 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_Surname));
             }
-            if ((Original_Employee_name == null)) {
+            if ((Original_EmployeeName == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Employee_name));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_EmployeeName));
             }
             if ((Original_Patronymic == null)) {
                 this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(1));
@@ -6549,7 +6549,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((string)(Original_Patronymic));
             }
             this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[12].Value = ((bool)(Original_Network_access));
+            this.Adapter.UpdateCommand.Parameters[12].Value = ((bool)(Original_NetworkAccess));
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
                         != global::System.Data.ConnectionState.Open)) {
@@ -7140,50 +7140,50 @@ namespace KR1.BD_KRDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Network";
             tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("Communication type", "Communication type");
+            tableMapping.ColumnMappings.Add("CommunicationType", "CommunicationType");
             tableMapping.ColumnMappings.Add("Topology", "Topology");
-            tableMapping.ColumnMappings.Add("Internet access", "Internet access");
-            tableMapping.ColumnMappings.Add("IP adress", "IP adress");
+            tableMapping.ColumnMappings.Add("InternetAccess", "InternetAccess");
+            tableMapping.ColumnMappings.Add("IPAdress", "IPAdress");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Network` WHERE ((`ID` = ?) AND ((? = 1 AND `Communication type` IS NULL) OR (`Communication type` = ?)) AND ((? = 1 AND `Topology` IS NULL) OR (`Topology` = ?)) AND ((? = 1 AND `Internet access` IS NULL) OR (`Internet access` = ?)) AND ((? = 1 AND `IP adress` IS NULL) OR (`IP adress` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Network` WHERE ((`ID` = ?) AND ((? = 1 AND `CommunicationType` IS NULL) OR (`CommunicationType` = ?)) AND ((? = 1 AND `Topology` IS NULL) OR (`Topology` = ?)) AND ((? = 1 AND `InternetAccess` IS NULL) OR (`InternetAccess` = ?)) AND ((? = 1 AND `IPAdress` IS NULL) OR (`IPAdress` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Communication_type", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Communication type", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Communication_type", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Communication type", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_CommunicationType", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CommunicationType", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_CommunicationType", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CommunicationType", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Topology", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Topology", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Topology", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Topology", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Internet_access", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Internet access", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Internet_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Internet access", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_IP_adress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IP adress", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_IP_adress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IP adress", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_InternetAccess", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "InternetAccess", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_InternetAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "InternetAccess", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_IPAdress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IPAdress", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_IPAdress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IPAdress", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Network` (`Communication type`, `Topology`, `Internet access`, `IP a" +
-                "dress`) VALUES (?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Network` (`CommunicationType`, `Topology`, `InternetAccess`, `IPAdre" +
+                "ss`) VALUES (?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Communication_type", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Communication type", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CommunicationType", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CommunicationType", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Topology", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Topology", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Internet_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Internet access", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IP_adress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IP adress", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("InternetAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "InternetAccess", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IPAdress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IPAdress", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Network` SET `Communication type` = ?, `Topology` = ?, `Internet access` = ?, `IP adress` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Communication type` IS NULL) OR (`Communication type` = ?)) AND ((? = 1 AND `Topology` IS NULL) OR (`Topology` = ?)) AND ((? = 1 AND `Internet access` IS NULL) OR (`Internet access` = ?)) AND ((? = 1 AND `IP adress` IS NULL) OR (`IP adress` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Network` SET `CommunicationType` = ?, `Topology` = ?, `InternetAccess` = ?, `IPAdress` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `CommunicationType` IS NULL) OR (`CommunicationType` = ?)) AND ((? = 1 AND `Topology` IS NULL) OR (`Topology` = ?)) AND ((? = 1 AND `InternetAccess` IS NULL) OR (`InternetAccess` = ?)) AND ((? = 1 AND `IPAdress` IS NULL) OR (`IPAdress` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Communication_type", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Communication type", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("CommunicationType", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CommunicationType", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Topology", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Topology", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Internet_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Internet access", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IP_adress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IP adress", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("InternetAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "InternetAccess", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IPAdress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IPAdress", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Communication_type", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Communication type", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Communication_type", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Communication type", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_CommunicationType", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CommunicationType", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_CommunicationType", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "CommunicationType", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Topology", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Topology", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Topology", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Topology", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Internet_access", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Internet access", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Internet_access", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Internet access", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_IP_adress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IP adress", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_IP_adress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IP adress", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_InternetAccess", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "InternetAccess", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_InternetAccess", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "InternetAccess", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_IPAdress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IPAdress", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_IPAdress", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "IPAdress", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7199,8 +7199,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, [Communication type], Topology, [Internet access], [IP adress] FROM Ne" +
-                "twork";
+            this._commandCollection[0].CommandText = "SELECT ID, CommunicationType, Topology, InternetAccess, IPAdress FROM Network";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7261,15 +7260,15 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, string Original_Communication_type, string Original_Topology, bool Original_Internet_access, string Original_IP_adress) {
+        public virtual int Delete(int Original_ID, string Original_CommunicationType, string Original_Topology, bool Original_InternetAccess, string Original_IPAdress) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            if ((Original_Communication_type == null)) {
+            if ((Original_CommunicationType == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Communication_type));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_CommunicationType));
             }
             if ((Original_Topology == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
@@ -7280,14 +7279,14 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[4].Value = ((string)(Original_Topology));
             }
             this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((bool)(Original_Internet_access));
-            if ((Original_IP_adress == null)) {
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((bool)(Original_InternetAccess));
+            if ((Original_IPAdress == null)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_IP_adress));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((string)(Original_IPAdress));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.DeleteCommand.Connection.State;
             if (((this.Adapter.DeleteCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7309,12 +7308,12 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Communication_type, string Topology, bool Internet_access, string IP_adress) {
-            if ((Communication_type == null)) {
+        public virtual int Insert(string CommunicationType, string Topology, bool InternetAccess, string IPAdress) {
+            if ((CommunicationType == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Communication_type));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(CommunicationType));
             }
             if ((Topology == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -7322,12 +7321,12 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((string)(Topology));
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((bool)(Internet_access));
-            if ((IP_adress == null)) {
+            this.Adapter.InsertCommand.Parameters[2].Value = ((bool)(InternetAccess));
+            if ((IPAdress == null)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(IP_adress));
+                this.Adapter.InsertCommand.Parameters[3].Value = ((string)(IPAdress));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.InsertCommand.Connection.State;
             if (((this.Adapter.InsertCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7349,12 +7348,12 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Communication_type, string Topology, bool Internet_access, string IP_adress, int Original_ID, string Original_Communication_type, string Original_Topology, bool Original_Internet_access, string Original_IP_adress) {
-            if ((Communication_type == null)) {
+        public virtual int Update(string CommunicationType, string Topology, bool InternetAccess, string IPAdress, int Original_ID, string Original_CommunicationType, string Original_Topology, bool Original_InternetAccess, string Original_IPAdress) {
+            if ((CommunicationType == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Communication_type));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(CommunicationType));
             }
             if ((Topology == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -7362,21 +7361,21 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((string)(Topology));
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((bool)(Internet_access));
-            if ((IP_adress == null)) {
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((bool)(InternetAccess));
+            if ((IPAdress == null)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(IP_adress));
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((string)(IPAdress));
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_ID));
-            if ((Original_Communication_type == null)) {
+            if ((Original_CommunicationType == null)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_Communication_type));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((string)(Original_CommunicationType));
             }
             if ((Original_Topology == null)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
@@ -7387,14 +7386,14 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((string)(Original_Topology));
             }
             this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(Original_Internet_access));
-            if ((Original_IP_adress == null)) {
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(Original_InternetAccess));
+            if ((Original_IPAdress == null)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[12].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_IP_adress));
+                this.Adapter.UpdateCommand.Parameters[12].Value = ((string)(Original_IPAdress));
             }
             global::System.Data.ConnectionState previousConnectionState = this.Adapter.UpdateCommand.Connection.State;
             if (((this.Adapter.UpdateCommand.Connection.State & global::System.Data.ConnectionState.Open) 
@@ -7535,40 +7534,40 @@ namespace KR1.BD_KRDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Provider";
             tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("Provider name", "Provider name");
+            tableMapping.ColumnMappings.Add("ProviderName", "ProviderName");
             tableMapping.ColumnMappings.Add("Telephone", "Telephone");
             tableMapping.ColumnMappings.Add("Adress", "Adress");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = "DELETE FROM `Provider` WHERE ((`ID` = ?) AND ((? = 1 AND `Provider name` IS NULL)" +
-                " OR (`Provider name` = ?)) AND ((? = 1 AND `Telephone` IS NULL) OR (`Telephone` " +
-                "= ?)) AND ((? = 1 AND `Adress` IS NULL) OR (`Adress` = ?)))";
+            this._adapter.DeleteCommand.CommandText = "DELETE FROM `Provider` WHERE ((`ID` = ?) AND ((? = 1 AND `ProviderName` IS NULL) " +
+                "OR (`ProviderName` = ?)) AND ((? = 1 AND `Telephone` IS NULL) OR (`Telephone` = " +
+                "?)) AND ((? = 1 AND `Adress` IS NULL) OR (`Adress` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Provider_name", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider name", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Provider_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider name", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ProviderName", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ProviderName", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ProviderName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ProviderName", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Telephone", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Telephone", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Telephone", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Telephone", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Adress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Adress", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Adress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Adress", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Provider` (`Provider name`, `Telephone`, `Adress`) VALUES (?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Provider` (`ProviderName`, `Telephone`, `Adress`) VALUES (?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Provider_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ProviderName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ProviderName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Telephone", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Telephone", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Adress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Adress", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Provider` SET `Provider name` = ?, `Telephone` = ?, `Adress` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Provider name` IS NULL) OR (`Provider name` = ?)) AND ((? = 1 AND `Telephone` IS NULL) OR (`Telephone` = ?)) AND ((? = 1 AND `Adress` IS NULL) OR (`Adress` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Provider` SET `ProviderName` = ?, `Telephone` = ?, `Adress` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `ProviderName` IS NULL) OR (`ProviderName` = ?)) AND ((? = 1 AND `Telephone` IS NULL) OR (`Telephone` = ?)) AND ((? = 1 AND `Adress` IS NULL) OR (`Adress` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Provider_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider name", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("ProviderName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ProviderName", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Telephone", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Telephone", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Adress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Adress", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Provider_name", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider name", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Provider_name", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider name", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_ProviderName", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ProviderName", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ProviderName", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ProviderName", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Telephone", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Telephone", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Telephone", global::System.Data.OleDb.OleDbType.VarWChar, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Telephone", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Adress", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Adress", global::System.Data.DataRowVersion.Original, true, null));
@@ -7588,7 +7587,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, [Provider name], Telephone, Adress FROM Provider";
+            this._commandCollection[0].CommandText = "SELECT ID, ProviderName, Telephone, Adress FROM Provider";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -7649,15 +7648,15 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, string Original_Provider_name, string Original_Telephone, global::System.Nullable<int> Original_Adress) {
+        public virtual int Delete(int Original_ID, string Original_ProviderName, string Original_Telephone, global::System.Nullable<int> Original_Adress) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            if ((Original_Provider_name == null)) {
+            if ((Original_ProviderName == null)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_Provider_name));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((string)(Original_ProviderName));
             }
             if ((Original_Telephone == null)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
@@ -7695,12 +7694,12 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(string Provider_name, string Telephone, global::System.Nullable<int> Adress) {
-            if ((Provider_name == null)) {
+        public virtual int Insert(string ProviderName, string Telephone, global::System.Nullable<int> Adress) {
+            if ((ProviderName == null)) {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(Provider_name));
+                this.Adapter.InsertCommand.Parameters[0].Value = ((string)(ProviderName));
             }
             if ((Telephone == null)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -7734,12 +7733,12 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(string Provider_name, string Telephone, global::System.Nullable<int> Adress, int Original_ID, string Original_Provider_name, string Original_Telephone, global::System.Nullable<int> Original_Adress) {
-            if ((Provider_name == null)) {
+        public virtual int Update(string ProviderName, string Telephone, global::System.Nullable<int> Adress, int Original_ID, string Original_ProviderName, string Original_Telephone, global::System.Nullable<int> Original_Adress) {
+            if ((ProviderName == null)) {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
             else {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(Provider_name));
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((string)(ProviderName));
             }
             if ((Telephone == null)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
@@ -7754,13 +7753,13 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Original_ID));
-            if ((Original_Provider_name == null)) {
+            if ((Original_ProviderName == null)) {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[5].Value = global::System.DBNull.Value;
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_Provider_name));
+                this.Adapter.UpdateCommand.Parameters[5].Value = ((string)(Original_ProviderName));
             }
             if ((Original_Telephone == null)) {
                 this.Adapter.UpdateCommand.Parameters[6].Value = ((object)(1));
@@ -7919,55 +7918,55 @@ namespace KR1.BD_KRDataSetTableAdapters {
             tableMapping.ColumnMappings.Add("ID", "ID");
             tableMapping.ColumnMappings.Add("Efficiency", "Efficiency");
             tableMapping.ColumnMappings.Add("Provider", "Provider");
-            tableMapping.ColumnMappings.Add("Delivery date", "Delivery date");
-            tableMapping.ColumnMappings.Add("Guarantee period", "Guarantee period");
-            tableMapping.ColumnMappings.Add("Purchase amount", "Purchase amount");
+            tableMapping.ColumnMappings.Add("DeliveryDate", "DeliveryDate");
+            tableMapping.ColumnMappings.Add("GuaranteePeriod", "GuaranteePeriod");
+            tableMapping.ColumnMappings.Add("PurchaseAmount", "PurchaseAmount");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Purchases` WHERE ((`ID` = ?) AND ((? = 1 AND `Efficiency` IS NULL) OR (`Efficiency` = ?)) AND ((? = 1 AND `Provider` IS NULL) OR (`Provider` = ?)) AND ((? = 1 AND `Delivery date` IS NULL) OR (`Delivery date` = ?)) AND ((? = 1 AND `Guarantee period` IS NULL) OR (`Guarantee period` = ?)) AND ((? = 1 AND `Purchase amount` IS NULL) OR (`Purchase amount` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Purchases` WHERE ((`ID` = ?) AND ((? = 1 AND `Efficiency` IS NULL) OR (`Efficiency` = ?)) AND ((? = 1 AND `Provider` IS NULL) OR (`Provider` = ?)) AND ((? = 1 AND `DeliveryDate` IS NULL) OR (`DeliveryDate` = ?)) AND ((? = 1 AND `GuaranteePeriod` IS NULL) OR (`GuaranteePeriod` = ?)) AND ((? = 1 AND `PurchaseAmount` IS NULL) OR (`PurchaseAmount` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Efficiency", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Efficiency", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Efficiency", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Efficiency", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Provider", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Provider", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Delivery_date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Delivery date", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Delivery_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Delivery date", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Guarantee_period", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Guarantee period", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Guarantee_period", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Guarantee period", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Purchase_amount", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase amount", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Purchase_amount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase amount", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_DeliveryDate", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DeliveryDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_DeliveryDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DeliveryDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_GuaranteePeriod", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "GuaranteePeriod", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_GuaranteePeriod", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "GuaranteePeriod", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PurchaseAmount", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PurchaseAmount", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_PurchaseAmount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PurchaseAmount", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Purchases` (`Efficiency`, `Provider`, `Delivery date`, `Guarantee pe" +
-                "riod`, `Purchase amount`) VALUES (?, ?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Purchases` (`Efficiency`, `Provider`, `DeliveryDate`, `GuaranteePeri" +
+                "od`, `PurchaseAmount`) VALUES (?, ?, ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Efficiency", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Efficiency", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Provider", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Delivery_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Delivery date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Guarantee_period", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Guarantee period", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Purchase_amount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase amount", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DeliveryDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DeliveryDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("GuaranteePeriod", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "GuaranteePeriod", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PurchaseAmount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PurchaseAmount", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Purchases` SET `Efficiency` = ?, `Provider` = ?, `Delivery date` = ?, `Guarantee period` = ?, `Purchase amount` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Efficiency` IS NULL) OR (`Efficiency` = ?)) AND ((? = 1 AND `Provider` IS NULL) OR (`Provider` = ?)) AND ((? = 1 AND `Delivery date` IS NULL) OR (`Delivery date` = ?)) AND ((? = 1 AND `Guarantee period` IS NULL) OR (`Guarantee period` = ?)) AND ((? = 1 AND `Purchase amount` IS NULL) OR (`Purchase amount` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Purchases` SET `Efficiency` = ?, `Provider` = ?, `DeliveryDate` = ?, `GuaranteePeriod` = ?, `PurchaseAmount` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Efficiency` IS NULL) OR (`Efficiency` = ?)) AND ((? = 1 AND `Provider` IS NULL) OR (`Provider` = ?)) AND ((? = 1 AND `DeliveryDate` IS NULL) OR (`DeliveryDate` = ?)) AND ((? = 1 AND `GuaranteePeriod` IS NULL) OR (`GuaranteePeriod` = ?)) AND ((? = 1 AND `PurchaseAmount` IS NULL) OR (`PurchaseAmount` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Efficiency", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Efficiency", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Provider", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Delivery_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Delivery date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Guarantee_period", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Guarantee period", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Purchase_amount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase amount", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("DeliveryDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DeliveryDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("GuaranteePeriod", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "GuaranteePeriod", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("PurchaseAmount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PurchaseAmount", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Efficiency", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Efficiency", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Efficiency", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Efficiency", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Provider", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Provider", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Provider", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Delivery_date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Delivery date", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Delivery_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Delivery date", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Guarantee_period", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Guarantee period", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Guarantee_period", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Guarantee period", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Purchase_amount", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase amount", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Purchase_amount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Purchase amount", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_DeliveryDate", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DeliveryDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_DeliveryDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "DeliveryDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_GuaranteePeriod", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "GuaranteePeriod", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_GuaranteePeriod", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "GuaranteePeriod", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_PurchaseAmount", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PurchaseAmount", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_PurchaseAmount", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "PurchaseAmount", global::System.Data.DataRowVersion.Original, false, null));
         }
         
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
@@ -7983,8 +7982,8 @@ namespace KR1.BD_KRDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, Efficiency, Provider, [Delivery date], [Guarantee period], [Purchase a" +
-                "mount] FROM Purchases";
+            this._commandCollection[0].CommandText = "SELECT ID, Efficiency, Provider, DeliveryDate, GuaranteePeriod, PurchaseAmount FR" +
+                "OM Purchases";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -8045,7 +8044,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, bool Original_Efficiency, global::System.Nullable<int> Original_Provider, global::System.Nullable<global::System.DateTime> Original_Delivery_date, global::System.Nullable<int> Original_Guarantee_period, global::System.Nullable<decimal> Original_Purchase_amount) {
+        public virtual int Delete(int Original_ID, bool Original_Efficiency, global::System.Nullable<int> Original_Provider, global::System.Nullable<global::System.DateTime> Original_DeliveryDate, global::System.Nullable<int> Original_GuaranteePeriod, global::System.Nullable<decimal> Original_PurchaseAmount) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
             this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
             this.Adapter.DeleteCommand.Parameters[2].Value = ((bool)(Original_Efficiency));
@@ -8057,25 +8056,25 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
-            if ((Original_Delivery_date.HasValue == true)) {
+            if ((Original_DeliveryDate.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_Delivery_date.Value));
+                this.Adapter.DeleteCommand.Parameters[6].Value = ((System.DateTime)(Original_DeliveryDate.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Original_Guarantee_period.HasValue == true)) {
+            if ((Original_GuaranteePeriod.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_Guarantee_period.Value));
+                this.Adapter.DeleteCommand.Parameters[8].Value = ((int)(Original_GuaranteePeriod.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
-            if ((Original_Purchase_amount.HasValue == true)) {
+            if ((Original_PurchaseAmount.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[10].Value = ((decimal)(Original_Purchase_amount.Value));
+                this.Adapter.DeleteCommand.Parameters[10].Value = ((decimal)(Original_PurchaseAmount.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[9].Value = ((object)(1));
@@ -8101,7 +8100,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(bool Efficiency, global::System.Nullable<int> Provider, global::System.Nullable<global::System.DateTime> Delivery_date, global::System.Nullable<int> Guarantee_period, global::System.Nullable<decimal> Purchase_amount) {
+        public virtual int Insert(bool Efficiency, global::System.Nullable<int> Provider, global::System.Nullable<global::System.DateTime> DeliveryDate, global::System.Nullable<int> GuaranteePeriod, global::System.Nullable<decimal> PurchaseAmount) {
             this.Adapter.InsertCommand.Parameters[0].Value = ((bool)(Efficiency));
             if ((Provider.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[1].Value = ((int)(Provider.Value));
@@ -8109,20 +8108,20 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((Delivery_date.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(Delivery_date.Value));
+            if ((DeliveryDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[2].Value = ((System.DateTime)(DeliveryDate.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Guarantee_period.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(Guarantee_period.Value));
+            if ((GuaranteePeriod.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[3].Value = ((int)(GuaranteePeriod.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Purchase_amount.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(Purchase_amount.Value));
+            if ((PurchaseAmount.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[4].Value = ((decimal)(PurchaseAmount.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -8147,7 +8146,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(bool Efficiency, global::System.Nullable<int> Provider, global::System.Nullable<global::System.DateTime> Delivery_date, global::System.Nullable<int> Guarantee_period, global::System.Nullable<decimal> Purchase_amount, int Original_ID, bool Original_Efficiency, global::System.Nullable<int> Original_Provider, global::System.Nullable<global::System.DateTime> Original_Delivery_date, global::System.Nullable<int> Original_Guarantee_period, global::System.Nullable<decimal> Original_Purchase_amount) {
+        public virtual int Update(bool Efficiency, global::System.Nullable<int> Provider, global::System.Nullable<global::System.DateTime> DeliveryDate, global::System.Nullable<int> GuaranteePeriod, global::System.Nullable<decimal> PurchaseAmount, int Original_ID, bool Original_Efficiency, global::System.Nullable<int> Original_Provider, global::System.Nullable<global::System.DateTime> Original_DeliveryDate, global::System.Nullable<int> Original_GuaranteePeriod, global::System.Nullable<decimal> Original_PurchaseAmount) {
             this.Adapter.UpdateCommand.Parameters[0].Value = ((bool)(Efficiency));
             if ((Provider.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[1].Value = ((int)(Provider.Value));
@@ -8155,20 +8154,20 @@ namespace KR1.BD_KRDataSetTableAdapters {
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            if ((Delivery_date.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(Delivery_date.Value));
+            if ((DeliveryDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[2].Value = ((System.DateTime)(DeliveryDate.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Guarantee_period.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(Guarantee_period.Value));
+            if ((GuaranteePeriod.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[3].Value = ((int)(GuaranteePeriod.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
-            if ((Purchase_amount.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(Purchase_amount.Value));
+            if ((PurchaseAmount.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[4].Value = ((decimal)(PurchaseAmount.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[4].Value = global::System.DBNull.Value;
@@ -8184,25 +8183,25 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[8].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[9].Value = global::System.DBNull.Value;
             }
-            if ((Original_Delivery_date.HasValue == true)) {
+            if ((Original_DeliveryDate.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_Delivery_date.Value));
+                this.Adapter.UpdateCommand.Parameters[11].Value = ((System.DateTime)(Original_DeliveryDate.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[10].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[11].Value = global::System.DBNull.Value;
             }
-            if ((Original_Guarantee_period.HasValue == true)) {
+            if ((Original_GuaranteePeriod.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_Guarantee_period.Value));
+                this.Adapter.UpdateCommand.Parameters[13].Value = ((int)(Original_GuaranteePeriod.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[13].Value = global::System.DBNull.Value;
             }
-            if ((Original_Purchase_amount.HasValue == true)) {
+            if ((Original_PurchaseAmount.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(Original_Purchase_amount.Value));
+                this.Adapter.UpdateCommand.Parameters[15].Value = ((decimal)(Original_PurchaseAmount.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[14].Value = ((object)(1));
@@ -8347,48 +8346,48 @@ namespace KR1.BD_KRDataSetTableAdapters {
             tableMapping.SourceTable = "Table";
             tableMapping.DataSetTable = "Repair";
             tableMapping.ColumnMappings.Add("ID", "ID");
-            tableMapping.ColumnMappings.Add("Start date", "Start date");
-            tableMapping.ColumnMappings.Add("End date", "End date");
-            tableMapping.ColumnMappings.Add("Need to write off", "Need to write off");
+            tableMapping.ColumnMappings.Add("StartDate", "StartDate");
+            tableMapping.ColumnMappings.Add("EndDate", "EndDate");
+            tableMapping.ColumnMappings.Add("NeedToWriteOff", "NeedToWriteOff");
             tableMapping.ColumnMappings.Add("Cost", "Cost");
             this._adapter.TableMappings.Add(tableMapping);
             this._adapter.DeleteCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.DeleteCommand.Connection = this.Connection;
-            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Repair` WHERE ((`ID` = ?) AND ((? = 1 AND `Start date` IS NULL) OR (`Start date` = ?)) AND ((? = 1 AND `End date` IS NULL) OR (`End date` = ?)) AND ((? = 1 AND `Need to write off` IS NULL) OR (`Need to write off` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)))";
+            this._adapter.DeleteCommand.CommandText = @"DELETE FROM `Repair` WHERE ((`ID` = ?) AND ((? = 1 AND `StartDate` IS NULL) OR (`StartDate` = ?)) AND ((? = 1 AND `EndDate` IS NULL) OR (`EndDate` = ?)) AND ((? = 1 AND `NeedToWriteOff` IS NULL) OR (`NeedToWriteOff` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)))";
             this._adapter.DeleteCommand.CommandType = global::System.Data.CommandType.Text;
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Start_date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Start date", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Start_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Start date", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_End_date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "End date", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_End_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "End date", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Need_to_write_off", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Need to write off", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Need_to_write_off", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Need to write off", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_StartDate", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_StartDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_EndDate", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_EndDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_NeedToWriteOff", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NeedToWriteOff", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NeedToWriteOff", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NeedToWriteOff", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Cost", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.DeleteCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.InsertCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.InsertCommand.Connection = this.Connection;
-            this._adapter.InsertCommand.CommandText = "INSERT INTO `Repair` (`Start date`, `End date`, `Need to write off`, `Cost`) VALU" +
-                "ES (?, ?, ?, ?)";
+            this._adapter.InsertCommand.CommandText = "INSERT INTO `Repair` (`StartDate`, `EndDate`, `NeedToWriteOff`, `Cost`) VALUES (?" +
+                ", ?, ?, ?)";
             this._adapter.InsertCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Start_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Start date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("End_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "End date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Need_to_write_off", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Need to write off", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("StartDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EndDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NeedToWriteOff", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NeedToWriteOff", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.InsertCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand = new global::System.Data.OleDb.OleDbCommand();
             this._adapter.UpdateCommand.Connection = this.Connection;
-            this._adapter.UpdateCommand.CommandText = @"UPDATE `Repair` SET `Start date` = ?, `End date` = ?, `Need to write off` = ?, `Cost` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `Start date` IS NULL) OR (`Start date` = ?)) AND ((? = 1 AND `End date` IS NULL) OR (`End date` = ?)) AND ((? = 1 AND `Need to write off` IS NULL) OR (`Need to write off` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)))";
+            this._adapter.UpdateCommand.CommandText = @"UPDATE `Repair` SET `StartDate` = ?, `EndDate` = ?, `NeedToWriteOff` = ?, `Cost` = ? WHERE ((`ID` = ?) AND ((? = 1 AND `StartDate` IS NULL) OR (`StartDate` = ?)) AND ((? = 1 AND `EndDate` IS NULL) OR (`EndDate` = ?)) AND ((? = 1 AND `NeedToWriteOff` IS NULL) OR (`NeedToWriteOff` = ?)) AND ((? = 1 AND `Cost` IS NULL) OR (`Cost` = ?)))";
             this._adapter.UpdateCommand.CommandType = global::System.Data.CommandType.Text;
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Start_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Start date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("End_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "End date", global::System.Data.DataRowVersion.Current, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Need_to_write_off", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Need to write off", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("StartDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("EndDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndDate", global::System.Data.DataRowVersion.Current, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("NeedToWriteOff", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NeedToWriteOff", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Current, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_ID", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "ID", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Start_date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Start date", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Start_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Start date", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_End_date", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "End date", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_End_date", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "End date", global::System.Data.DataRowVersion.Original, false, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Need_to_write_off", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Need to write off", global::System.Data.DataRowVersion.Original, true, null));
-            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Need_to_write_off", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Need to write off", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_StartDate", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_StartDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "StartDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_EndDate", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndDate", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_EndDate", global::System.Data.OleDb.OleDbType.Date, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "EndDate", global::System.Data.DataRowVersion.Original, false, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_NeedToWriteOff", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NeedToWriteOff", global::System.Data.DataRowVersion.Original, true, null));
+            this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_NeedToWriteOff", global::System.Data.OleDb.OleDbType.Boolean, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "NeedToWriteOff", global::System.Data.DataRowVersion.Original, false, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("IsNull_Cost", global::System.Data.OleDb.OleDbType.Integer, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, true, null));
             this._adapter.UpdateCommand.Parameters.Add(new global::System.Data.OleDb.OleDbParameter("Original_Cost", global::System.Data.OleDb.OleDbType.Currency, 0, global::System.Data.ParameterDirection.Input, ((byte)(0)), ((byte)(0)), "Cost", global::System.Data.DataRowVersion.Original, false, null));
         }
@@ -8406,7 +8405,7 @@ namespace KR1.BD_KRDataSetTableAdapters {
             this._commandCollection = new global::System.Data.OleDb.OleDbCommand[1];
             this._commandCollection[0] = new global::System.Data.OleDb.OleDbCommand();
             this._commandCollection[0].Connection = this.Connection;
-            this._commandCollection[0].CommandText = "SELECT ID, [Start date], [End date], [Need to write off], Cost FROM Repair";
+            this._commandCollection[0].CommandText = "SELECT ID, StartDate, EndDate, NeedToWriteOff, Cost FROM Repair";
             this._commandCollection[0].CommandType = global::System.Data.CommandType.Text;
         }
         
@@ -8467,26 +8466,26 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Delete, true)]
-        public virtual int Delete(int Original_ID, global::System.Nullable<global::System.DateTime> Original_Start_date, global::System.Nullable<global::System.DateTime> Original_End_date, bool Original_Need_to_write_off, global::System.Nullable<decimal> Original_Cost) {
+        public virtual int Delete(int Original_ID, global::System.Nullable<global::System.DateTime> Original_StartDate, global::System.Nullable<global::System.DateTime> Original_EndDate, bool Original_NeedToWriteOff, global::System.Nullable<decimal> Original_Cost) {
             this.Adapter.DeleteCommand.Parameters[0].Value = ((int)(Original_ID));
-            if ((Original_Start_date.HasValue == true)) {
+            if ((Original_StartDate.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_Start_date.Value));
+                this.Adapter.DeleteCommand.Parameters[2].Value = ((System.DateTime)(Original_StartDate.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[1].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[2].Value = global::System.DBNull.Value;
             }
-            if ((Original_End_date.HasValue == true)) {
+            if ((Original_EndDate.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(0));
-                this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_End_date.Value));
+                this.Adapter.DeleteCommand.Parameters[4].Value = ((System.DateTime)(Original_EndDate.Value));
             }
             else {
                 this.Adapter.DeleteCommand.Parameters[3].Value = ((object)(1));
                 this.Adapter.DeleteCommand.Parameters[4].Value = global::System.DBNull.Value;
             }
             this.Adapter.DeleteCommand.Parameters[5].Value = ((object)(0));
-            this.Adapter.DeleteCommand.Parameters[6].Value = ((bool)(Original_Need_to_write_off));
+            this.Adapter.DeleteCommand.Parameters[6].Value = ((bool)(Original_NeedToWriteOff));
             if ((Original_Cost.HasValue == true)) {
                 this.Adapter.DeleteCommand.Parameters[7].Value = ((object)(0));
                 this.Adapter.DeleteCommand.Parameters[8].Value = ((decimal)(Original_Cost.Value));
@@ -8515,20 +8514,20 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Insert, true)]
-        public virtual int Insert(global::System.Nullable<global::System.DateTime> Start_date, global::System.Nullable<global::System.DateTime> End_date, bool Need_to_write_off, global::System.Nullable<decimal> Cost) {
-            if ((Start_date.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(Start_date.Value));
+        public virtual int Insert(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate, bool NeedToWriteOff, global::System.Nullable<decimal> Cost) {
+            if ((StartDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[0].Value = ((System.DateTime)(StartDate.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((End_date.HasValue == true)) {
-                this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(End_date.Value));
+            if ((EndDate.HasValue == true)) {
+                this.Adapter.InsertCommand.Parameters[1].Value = ((System.DateTime)(EndDate.Value));
             }
             else {
                 this.Adapter.InsertCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            this.Adapter.InsertCommand.Parameters[2].Value = ((bool)(Need_to_write_off));
+            this.Adapter.InsertCommand.Parameters[2].Value = ((bool)(NeedToWriteOff));
             if ((Cost.HasValue == true)) {
                 this.Adapter.InsertCommand.Parameters[3].Value = ((decimal)(Cost.Value));
             }
@@ -8555,20 +8554,20 @@ namespace KR1.BD_KRDataSetTableAdapters {
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Data.Design.TypedDataSetGenerator", "16.0.0.0")]
         [global::System.ComponentModel.Design.HelpKeywordAttribute("vs.data.TableAdapter")]
         [global::System.ComponentModel.DataObjectMethodAttribute(global::System.ComponentModel.DataObjectMethodType.Update, true)]
-        public virtual int Update(global::System.Nullable<global::System.DateTime> Start_date, global::System.Nullable<global::System.DateTime> End_date, bool Need_to_write_off, global::System.Nullable<decimal> Cost, int Original_ID, global::System.Nullable<global::System.DateTime> Original_Start_date, global::System.Nullable<global::System.DateTime> Original_End_date, bool Original_Need_to_write_off, global::System.Nullable<decimal> Original_Cost) {
-            if ((Start_date.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(Start_date.Value));
+        public virtual int Update(global::System.Nullable<global::System.DateTime> StartDate, global::System.Nullable<global::System.DateTime> EndDate, bool NeedToWriteOff, global::System.Nullable<decimal> Cost, int Original_ID, global::System.Nullable<global::System.DateTime> Original_StartDate, global::System.Nullable<global::System.DateTime> Original_EndDate, bool Original_NeedToWriteOff, global::System.Nullable<decimal> Original_Cost) {
+            if ((StartDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[0].Value = ((System.DateTime)(StartDate.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[0].Value = global::System.DBNull.Value;
             }
-            if ((End_date.HasValue == true)) {
-                this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(End_date.Value));
+            if ((EndDate.HasValue == true)) {
+                this.Adapter.UpdateCommand.Parameters[1].Value = ((System.DateTime)(EndDate.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[1].Value = global::System.DBNull.Value;
             }
-            this.Adapter.UpdateCommand.Parameters[2].Value = ((bool)(Need_to_write_off));
+            this.Adapter.UpdateCommand.Parameters[2].Value = ((bool)(NeedToWriteOff));
             if ((Cost.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[3].Value = ((decimal)(Cost.Value));
             }
@@ -8576,24 +8575,24 @@ namespace KR1.BD_KRDataSetTableAdapters {
                 this.Adapter.UpdateCommand.Parameters[3].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[4].Value = ((int)(Original_ID));
-            if ((Original_Start_date.HasValue == true)) {
+            if ((Original_StartDate.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(Original_Start_date.Value));
+                this.Adapter.UpdateCommand.Parameters[6].Value = ((System.DateTime)(Original_StartDate.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[5].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[6].Value = global::System.DBNull.Value;
             }
-            if ((Original_End_date.HasValue == true)) {
+            if ((Original_EndDate.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(0));
-                this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_End_date.Value));
+                this.Adapter.UpdateCommand.Parameters[8].Value = ((System.DateTime)(Original_EndDate.Value));
             }
             else {
                 this.Adapter.UpdateCommand.Parameters[7].Value = ((object)(1));
                 this.Adapter.UpdateCommand.Parameters[8].Value = global::System.DBNull.Value;
             }
             this.Adapter.UpdateCommand.Parameters[9].Value = ((object)(0));
-            this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(Original_Need_to_write_off));
+            this.Adapter.UpdateCommand.Parameters[10].Value = ((bool)(Original_NeedToWriteOff));
             if ((Original_Cost.HasValue == true)) {
                 this.Adapter.UpdateCommand.Parameters[11].Value = ((object)(0));
                 this.Adapter.UpdateCommand.Parameters[12].Value = ((decimal)(Original_Cost.Value));

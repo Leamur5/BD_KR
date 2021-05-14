@@ -40,25 +40,27 @@ namespace KR1
             this.label5 = new System.Windows.Forms.Label();
             this.NetworkAccess = new System.Windows.Forms.CheckBox();
             this.employeeDataGridView = new System.Windows.Forms.DataGridView();
-            this.bD_KRDataSet = new KR1.BD_KRDataSet();
             this.employeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.employeeTableAdapter = new KR1.BD_KRDataSetTableAdapters.EmployeeTableAdapter();
             this.controlsPanel = new System.Windows.Forms.Panel();
             this.deleteButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
-            this.networkAccessDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
-            this.patronymicDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.employeeNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.surnameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label9 = new System.Windows.Forms.Label();
             this.searchTextBox = new System.Windows.Forms.TextBox();
+            this.bD_KRDataSet1 = new KR1.BD_KRDataSet();
+            this.employeeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.employeeTableAdapter1 = new KR1.BD_KRDataSetTableAdapters.EmployeeTableAdapter();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewCheckBoxColumn1 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).BeginInit();
             this.controlsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -142,31 +144,21 @@ namespace KR1
             this.employeeDataGridView.AutoGenerateColumns = false;
             this.employeeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.employeeDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.iDDataGridViewTextBoxColumn,
-            this.surnameDataGridViewTextBoxColumn,
-            this.employeeNameDataGridViewTextBoxColumn,
-            this.patronymicDataGridViewTextBoxColumn,
-            this.networkAccessDataGridViewCheckBoxColumn});
-            this.employeeDataGridView.DataSource = this.employeeBindingSource;
+            this.dataGridViewTextBoxColumn1,
+            this.dataGridViewTextBoxColumn2,
+            this.dataGridViewTextBoxColumn3,
+            this.dataGridViewTextBoxColumn4,
+            this.dataGridViewCheckBoxColumn1});
+            this.employeeDataGridView.DataSource = this.employeeBindingSource1;
             this.employeeDataGridView.Location = new System.Drawing.Point(143, 213);
             this.employeeDataGridView.Name = "employeeDataGridView";
-            this.employeeDataGridView.Size = new System.Drawing.Size(550, 150);
+            this.employeeDataGridView.Size = new System.Drawing.Size(559, 150);
             this.employeeDataGridView.TabIndex = 102;
             this.employeeDataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.employeeDataGridView_RowHeaderMouseClick);
-            // 
-            // bD_KRDataSet
-            // 
-            this.bD_KRDataSet.DataSetName = "BD_KRDataSet";
-            this.bD_KRDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // employeeBindingSource
             // 
             this.employeeBindingSource.DataMember = "Employee";
-            this.employeeBindingSource.DataSource = this.bD_KRDataSet;
-            // 
-            // employeeTableAdapter
-            // 
-            this.employeeTableAdapter.ClearBeforeFill = true;
             // 
             // controlsPanel
             // 
@@ -219,36 +211,6 @@ namespace KR1
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // networkAccessDataGridViewCheckBoxColumn
-            // 
-            this.networkAccessDataGridViewCheckBoxColumn.DataPropertyName = "Network access";
-            this.networkAccessDataGridViewCheckBoxColumn.HeaderText = "Network access";
-            this.networkAccessDataGridViewCheckBoxColumn.Name = "networkAccessDataGridViewCheckBoxColumn";
-            // 
-            // patronymicDataGridViewTextBoxColumn
-            // 
-            this.patronymicDataGridViewTextBoxColumn.DataPropertyName = "Patronymic";
-            this.patronymicDataGridViewTextBoxColumn.HeaderText = "Patronymic";
-            this.patronymicDataGridViewTextBoxColumn.Name = "patronymicDataGridViewTextBoxColumn";
-            // 
-            // employeeNameDataGridViewTextBoxColumn
-            // 
-            this.employeeNameDataGridViewTextBoxColumn.DataPropertyName = "Employee name";
-            this.employeeNameDataGridViewTextBoxColumn.HeaderText = "Employee name";
-            this.employeeNameDataGridViewTextBoxColumn.Name = "employeeNameDataGridViewTextBoxColumn";
-            // 
-            // surnameDataGridViewTextBoxColumn
-            // 
-            this.surnameDataGridViewTextBoxColumn.DataPropertyName = "Surname";
-            this.surnameDataGridViewTextBoxColumn.HeaderText = "Surname";
-            this.surnameDataGridViewTextBoxColumn.Name = "surnameDataGridViewTextBoxColumn";
-            // 
-            // iDDataGridViewTextBoxColumn
-            // 
-            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
-            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
-            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -265,6 +227,50 @@ namespace KR1
             this.searchTextBox.Size = new System.Drawing.Size(125, 20);
             this.searchTextBox.TabIndex = 105;
             this.searchTextBox.KeyUp += new System.Windows.Forms.KeyEventHandler(this.searchTextBox_KeyUp);
+            // 
+            // bD_KRDataSet1
+            // 
+            this.bD_KRDataSet1.DataSetName = "BD_KRDataSet";
+            this.bD_KRDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // employeeBindingSource1
+            // 
+            this.employeeBindingSource1.DataMember = "Employee";
+            this.employeeBindingSource1.DataSource = this.bD_KRDataSet1;
+            // 
+            // employeeTableAdapter1
+            // 
+            this.employeeTableAdapter1.ClearBeforeFill = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn1.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.DataPropertyName = "Surname";
+            this.dataGridViewTextBoxColumn2.HeaderText = "Surname";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            this.dataGridViewTextBoxColumn3.DataPropertyName = "EmployeeName";
+            this.dataGridViewTextBoxColumn3.HeaderText = "EmployeeName";
+            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            this.dataGridViewTextBoxColumn4.DataPropertyName = "Patronymic";
+            this.dataGridViewTextBoxColumn4.HeaderText = "Patronymic";
+            this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // dataGridViewCheckBoxColumn1
+            // 
+            this.dataGridViewCheckBoxColumn1.DataPropertyName = "NetworkAccess";
+            this.dataGridViewCheckBoxColumn1.HeaderText = "NetworkAccess";
+            this.dataGridViewCheckBoxColumn1.Name = "dataGridViewCheckBoxColumn1";
             // 
             // EmployeeForm
             // 
@@ -289,9 +295,10 @@ namespace KR1
             this.Load += new System.EventHandler(this.EmployeeForm_Load);
             this.Click += new System.EventHandler(this.EmployeeForm_Click);
             ((System.ComponentModel.ISupportInitialize)(this.employeeDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource)).EndInit();
             this.controlsPanel.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.employeeBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -324,5 +331,13 @@ namespace KR1
         private System.Windows.Forms.DataGridViewCheckBoxColumn networkAccessDataGridViewCheckBoxColumn;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox searchTextBox;
+        private BD_KRDataSet bD_KRDataSet1;
+        private System.Windows.Forms.BindingSource employeeBindingSource1;
+        private BD_KRDataSetTableAdapters.EmployeeTableAdapter employeeTableAdapter1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn1;
     }
 }
