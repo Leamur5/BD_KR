@@ -12,7 +12,7 @@ namespace KR1
 {
     public partial class EmployeeForm : Form, ICRUDForm
     {
-        private static class PositionModel
+        private static class EmployeeModel
         {
             public static int id { get; set; }
             public static string surname { get; set; }
@@ -32,7 +32,7 @@ namespace KR1
         {
             InitializeComponent();
             clearInputs();
-            PositionModel.reset();
+            EmployeeModel.reset();
         }
 
         private void EmployeeForm_Load(object sender, EventArgs e)
@@ -55,7 +55,7 @@ namespace KR1
 
         public void deleteRow()
         {
-            employeeTableAdapter.Delete(PositionModel.id, PositionModel.surname, PositionModel.name, PositionModel.patronymic, PositionModel.networkAccess);
+            employeeTableAdapter.Delete(EmployeeModel.id, EmployeeModel.surname, EmployeeModel.name, EmployeeModel.patronymic, EmployeeModel.networkAccess);
         }
         public void updateRow()
         {
@@ -63,10 +63,10 @@ namespace KR1
         }
         public void updateInputs()
         {
-            SurnameTextBox.Text = PositionModel.surname;
-            NameTextBox.Text = PositionModel.name;
-            PatronymicTextBox.Text = PositionModel.patronymic;
-            NetworkAccess.Checked = PositionModel.networkAccess;
+            SurnameTextBox.Text = EmployeeModel.surname;
+            NameTextBox.Text = EmployeeModel.name;
+            PatronymicTextBox.Text = EmployeeModel.patronymic;
+            NetworkAccess.Checked = EmployeeModel.networkAccess;
         }
         public void clearInputs()
         {
@@ -77,7 +77,7 @@ namespace KR1
         }
         public bool isIncorrectModel()
         {
-            return PositionModel.id < 0 || PositionModel.surname == "" || PositionModel.name == "" || PositionModel.patronymic == "";
+            return EmployeeModel.id < 0 || EmployeeModel.surname == "" || EmployeeModel.name == "" || EmployeeModel.patronymic == "";
         }
         public bool isIncorrectInputs()
         {
@@ -86,11 +86,11 @@ namespace KR1
         }
         private void employeeDataGridView_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
-            PositionModel.id = Convert.ToInt32(employeeDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
-            PositionModel.surname = employeeDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
-            PositionModel.name = employeeDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
-            PositionModel.patronymic = employeeDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
-            PositionModel.networkAccess = Convert.ToBoolean(employeeDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString());
+            EmployeeModel.id = Convert.ToInt32(employeeDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
+            EmployeeModel.surname = employeeDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString();
+            EmployeeModel.name = employeeDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString();
+            EmployeeModel.patronymic = employeeDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString();
+            EmployeeModel.networkAccess = Convert.ToBoolean(employeeDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString());
             
             updateInputs();
         }
@@ -98,7 +98,7 @@ namespace KR1
         private void EmployeeForm_Click(object sender, EventArgs e)
         {
             clearInputs();
-            PositionModel.reset();
+            EmployeeModel.reset();
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -124,7 +124,7 @@ namespace KR1
                 updateRow();
                 
                 updateView();
-                PositionModel.reset();
+                EmployeeModel.reset();
                 clearInputs();
             }
         }
@@ -139,13 +139,48 @@ namespace KR1
             {
                 deleteRow();
                 updateView();
-                PositionModel.reset();
+                EmployeeModel.reset();
                 clearInputs();
             }
         }
         private void closeButton_Click(object sender, EventArgs e)
         {
             Close();
+        }
+        private void mapPropsFromDGVToModel(int rowIndex)
+        {
+            EmployeeModel.id = Convert.ToInt32(employeeDataGridView.Rows[rowIndex].Cells[0].Value.ToString());
+            EmployeeModel.surname = employeeDataGridView.Rows[rowIndex].Cells[1].Value.ToString();
+            EmployeeModel.name = employeeDataGridView.Rows[rowIndex].Cells[2].Value.ToString();
+            EmployeeModel.patronymic = employeeDataGridView.Rows[rowIndex].Cells[3].Value.ToString();
+            EmployeeModel.networkAccess = Convert.ToBoolean(employeeDataGridView.Rows[rowIndex].Cells[4].Value.ToString());
+        }
+        
+
+        private void searchTextBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (searchTextBox.Text.Trim().Length == 0 || e.KeyCode != Keys.Enter)
+            {
+                return;
+            }
+            var findedRow = employeeTableAdapter.GetData().FirstOrDefault(d => d.Surname.StartsWith(searchTextBox.Text));
+            if (findedRow == null)
+            {
+                MessageBox.Show("Ничего не найдено");
+                return;
+            }
+            int rowIndex = 0;
+            for (int i = 0; i < employeeDataGridView.Rows.Count; i++)
+            {
+                employeeDataGridView.Rows[i].Selected = employeeDataGridView.Rows[i].Cells[1].Value.ToString() == findedRow.Surname ? true : false;
+                if (employeeDataGridView.Rows[i].Selected)
+                {
+                    rowIndex = i;
+                    break;
+                }
+            }
+            mapPropsFromDGVToModel(rowIndex);
+            updateInputs();
         }
     }
 }
