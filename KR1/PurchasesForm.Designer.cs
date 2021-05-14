@@ -31,7 +31,6 @@ namespace KR1
         {
             this.components = new System.ComponentModel.Container();
             this.formLabel = new System.Windows.Forms.Label();
-            this.purchasesComboBox = new System.Windows.Forms.ComboBox();
             this.controlsPanel = new System.Windows.Forms.Panel();
             this.deleteButton = new System.Windows.Forms.Button();
             this.addButton = new System.Windows.Forms.Button();
@@ -40,12 +39,16 @@ namespace KR1
             this.bD_KRDataSet = new KR1.BD_KRDataSet();
             this.purchasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchasesTableAdapter = new KR1.BD_KRDataSetTableAdapters.PurchasesTableAdapter();
-            this.purchasesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.efficiencyDataGridViewCheckBoxColumn = new System.Windows.Forms.DataGridViewCheckBoxColumn();
+            this.providerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.deliveryDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.guaranteePeriodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.purchaseAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.controlsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.purchaseDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // formLabel
@@ -57,17 +60,6 @@ namespace KR1
             this.formLabel.Size = new System.Drawing.Size(152, 31);
             this.formLabel.TabIndex = 1;
             this.formLabel.Text = "Закупка №";
-            // 
-            // purchasesComboBox
-            // 
-            this.purchasesComboBox.DataSource = this.purchasesBindingSource;
-            this.purchasesComboBox.DisplayMember = "ID";
-            this.purchasesComboBox.FormattingEnabled = true;
-            this.purchasesComboBox.Location = new System.Drawing.Point(529, 118);
-            this.purchasesComboBox.Name = "purchasesComboBox";
-            this.purchasesComboBox.Size = new System.Drawing.Size(168, 21);
-            this.purchasesComboBox.TabIndex = 100;
-            this.purchasesComboBox.ValueMember = "DishId";
             // 
             // controlsPanel
             // 
@@ -111,10 +103,19 @@ namespace KR1
             // 
             // purchaseDataGridView
             // 
+            this.purchaseDataGridView.AutoGenerateColumns = false;
             this.purchaseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.purchaseDataGridView.Location = new System.Drawing.Point(51, 159);
+            this.purchaseDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.iDDataGridViewTextBoxColumn,
+            this.efficiencyDataGridViewCheckBoxColumn,
+            this.providerDataGridViewTextBoxColumn,
+            this.deliveryDateDataGridViewTextBoxColumn,
+            this.guaranteePeriodDataGridViewTextBoxColumn,
+            this.purchaseAmountDataGridViewTextBoxColumn});
+            this.purchaseDataGridView.DataSource = this.purchasesBindingSource;
+            this.purchaseDataGridView.Location = new System.Drawing.Point(84, 155);
             this.purchaseDataGridView.Name = "purchaseDataGridView";
-            this.purchaseDataGridView.Size = new System.Drawing.Size(646, 206);
+            this.purchaseDataGridView.Size = new System.Drawing.Size(650, 206);
             this.purchaseDataGridView.TabIndex = 102;
             this.purchaseDataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.purchaseDataGridView_RowHeaderMouseClick);
             // 
@@ -132,10 +133,41 @@ namespace KR1
             // 
             this.purchasesTableAdapter.ClearBeforeFill = true;
             // 
-            // purchasesBindingSource1
+            // iDDataGridViewTextBoxColumn
             // 
-            this.purchasesBindingSource1.DataMember = "Purchases";
-            this.purchasesBindingSource1.DataSource = this.bD_KRDataSet;
+            this.iDDataGridViewTextBoxColumn.DataPropertyName = "ID";
+            this.iDDataGridViewTextBoxColumn.HeaderText = "ID";
+            this.iDDataGridViewTextBoxColumn.Name = "iDDataGridViewTextBoxColumn";
+            // 
+            // efficiencyDataGridViewCheckBoxColumn
+            // 
+            this.efficiencyDataGridViewCheckBoxColumn.DataPropertyName = "Efficiency";
+            this.efficiencyDataGridViewCheckBoxColumn.HeaderText = "Efficiency";
+            this.efficiencyDataGridViewCheckBoxColumn.Name = "efficiencyDataGridViewCheckBoxColumn";
+            // 
+            // providerDataGridViewTextBoxColumn
+            // 
+            this.providerDataGridViewTextBoxColumn.DataPropertyName = "Provider";
+            this.providerDataGridViewTextBoxColumn.HeaderText = "Provider";
+            this.providerDataGridViewTextBoxColumn.Name = "providerDataGridViewTextBoxColumn";
+            // 
+            // deliveryDateDataGridViewTextBoxColumn
+            // 
+            this.deliveryDateDataGridViewTextBoxColumn.DataPropertyName = "DeliveryDate";
+            this.deliveryDateDataGridViewTextBoxColumn.HeaderText = "DeliveryDate";
+            this.deliveryDateDataGridViewTextBoxColumn.Name = "deliveryDateDataGridViewTextBoxColumn";
+            // 
+            // guaranteePeriodDataGridViewTextBoxColumn
+            // 
+            this.guaranteePeriodDataGridViewTextBoxColumn.DataPropertyName = "GuaranteePeriod";
+            this.guaranteePeriodDataGridViewTextBoxColumn.HeaderText = "GuaranteePeriod";
+            this.guaranteePeriodDataGridViewTextBoxColumn.Name = "guaranteePeriodDataGridViewTextBoxColumn";
+            // 
+            // purchaseAmountDataGridViewTextBoxColumn
+            // 
+            this.purchaseAmountDataGridViewTextBoxColumn.DataPropertyName = "PurchaseAmount";
+            this.purchaseAmountDataGridViewTextBoxColumn.HeaderText = "PurchaseAmount";
+            this.purchaseAmountDataGridViewTextBoxColumn.Name = "purchaseAmountDataGridViewTextBoxColumn";
             // 
             // PurchasesForm
             // 
@@ -144,7 +176,6 @@ namespace KR1
             this.ClientSize = new System.Drawing.Size(800, 464);
             this.Controls.Add(this.purchaseDataGridView);
             this.Controls.Add(this.controlsPanel);
-            this.Controls.Add(this.purchasesComboBox);
             this.Controls.Add(this.formLabel);
             this.Name = "PurchasesForm";
             this.Text = "PurchasesForm";
@@ -153,7 +184,6 @@ namespace KR1
             ((System.ComponentModel.ISupportInitialize)(this.purchaseDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -162,7 +192,6 @@ namespace KR1
         #endregion
 
         private System.Windows.Forms.Label formLabel;
-        private System.Windows.Forms.ComboBox purchasesComboBox;
         private System.Windows.Forms.Panel controlsPanel;
         private System.Windows.Forms.Button deleteButton;
         private System.Windows.Forms.Button addButton;
@@ -171,6 +200,11 @@ namespace KR1
         private BD_KRDataSet bD_KRDataSet;
         private System.Windows.Forms.BindingSource purchasesBindingSource;
         private BD_KRDataSetTableAdapters.PurchasesTableAdapter purchasesTableAdapter;
-        private System.Windows.Forms.BindingSource purchasesBindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn iDDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewCheckBoxColumn efficiencyDataGridViewCheckBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn providerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn deliveryDateDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn guaranteePeriodDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn purchaseAmountDataGridViewTextBoxColumn;
     }
 }

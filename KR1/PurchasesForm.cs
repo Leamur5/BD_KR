@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace KR1
 {
-    public partial class PurchasesForm : Form, ICRUDForm
+    public partial class PurchasesForm : Form
     {
         private static class PurchasesModel
         {
@@ -22,7 +22,7 @@ namespace KR1
             public static int purchaseAmount { get; set; }
             public static void reset()
             {
-                
+                id = -1;
                 efficiency = false;
                 provider = -1;
                 deliveryDate = new DateTime(0001, 01, 01);
@@ -35,38 +35,26 @@ namespace KR1
             InitializeComponent();
             PurchasesModel.id = accessoriesId;
             formLabel.Text += " " + accessoriesId;
-            purchasesComboBox.Update();
+            
             PurchasesModel.reset();
-            clearInputs();
+            
         }
 
         private void updateDGVDataSource()
         {
-            string query = "SELECT Purchases.ID,Purchases.Provider, Purchases.DeliveryDate,Purchases.GuaranteePeriod,Purchases.PurchaseAmount " +
+            /*string query = "SELECT Purchases.ID,Purchases.Provider, Purchases.DeliveryDate,Purchases.GuaranteePeriod,Purchases.PurchaseAmount " +
                 "FROM(Accessories INNER JOIN Purchases ON Accessories.Purchase_ID = Purchases.ID) " +
                 "WHERE(Purchases.ID = " + PurchasesModel.id.ToString() + ")";
-            purchaseDataGridView.DataSource = DGVDataSourceChanger.getNewDGVDataSource(query);
+            purchaseDataGridView.DataSource = DGVDataSourceChanger.getNewDGVDataSource(query);*/
             purchaseDataGridView.Update();
         }
         public void updateView()
         {
             purchasesTableAdapter.Fill(bD_KRDataSet.Purchases);
-            purchasesBindingSource1.ResetBindings(false);
+            purchasesBindingSource.ResetBindings(false);
             updateDGVDataSource();
         }
-        public void insertRow()
-        {
-            purchasesTableAdapter.Insert(purchasesTableAdapter.GetData()
-                .FirstOrDefault(d => Convert.ToString(d.ID) == purchasesComboBox.Text).Efficiency,
-                purchasesTableAdapter.GetData()
-                .FirstOrDefault(d => Convert.ToString(d.ID) == purchasesComboBox.Text).Provider,
-                purchasesTableAdapter.GetData()
-                .FirstOrDefault(d => Convert.ToString(d.ID) == purchasesComboBox.Text).DeliveryDate,
-                purchasesTableAdapter.GetData()
-                .FirstOrDefault(d => Convert.ToString(d.ID) == purchasesComboBox.Text).GuaranteePeriod,
-                purchasesTableAdapter.GetData()
-                .FirstOrDefault(d => Convert.ToString(d.ID) == purchasesComboBox.Text).PurchaseAmount);
-        }
+        
         public void deleteRow()
         {
             purchasesTableAdapter.Delete(PurchasesModel.id, PurchasesModel.efficiency,
@@ -77,29 +65,23 @@ namespace KR1
         {
             purchasesTableAdapter.Update(bD_KRDataSet);
         }
-        public void updateInputs()
-        {
-            
-            purchasesComboBox.SelectedIndex = purchasesComboBox.FindString(Convert.ToString(purchasesTableAdapter.GetData().FirstOrDefault(u => u.ID == PurchasesModel.id).ID));
-
-        }
-        public void clearInputs()
-        {
-            purchasesComboBox.SelectedIndex = -1;
-        }
+        
+        
         public bool isIncorrectModel()
         {
             return PurchasesModel.id < 0 || PurchasesModel.purchaseAmount < 0 ||
                 PurchasesModel.provider < 0 || PurchasesModel.guaranteePeriod < 0;
         }
-        public bool isIncorrectInputs()
-        {
-            return purchasesComboBox.SelectedIndex < 0;
-        }
+        
         private void purchaseDataGridView_RowHeaderMouseClick(object sender, DataGridViewCellMouseEventArgs e)
         {
             PurchasesModel.id = Convert.ToInt32(purchaseDataGridView.Rows[e.RowIndex].Cells[0].Value.ToString());
-            updateInputs();
+            PurchasesModel.efficiency = Convert.ToBoolean(purchaseDataGridView.Rows[e.RowIndex].Cells[1].Value.ToString());
+            PurchasesModel.provider = Convert.ToInt32(purchaseDataGridView.Rows[e.RowIndex].Cells[2].Value.ToString());
+            PurchasesModel.deliveryDate = Convert.ToDateTime(purchaseDataGridView.Rows[e.RowIndex].Cells[3].Value.ToString());
+            PurchasesModel.guaranteePeriod = Convert.ToInt32(purchaseDataGridView.Rows[e.RowIndex].Cells[4].Value.ToString());
+            PurchasesModel.purchaseAmount = Convert.ToInt32(purchaseDataGridView.Rows[e.RowIndex].Cells[5].Value.ToString());
+
         }
         private void closeButton_Click(object sender, EventArgs e)
         {
@@ -108,7 +90,7 @@ namespace KR1
 
         private void saveButton_Click(object sender, EventArgs e)
         {
-            if (isIncorrectModel() || isIncorrectInputs())
+            if (isIncorrectModel())
             {
                 MessageBox.Show("Выберите строку и введите новые значения");
             }
@@ -117,12 +99,12 @@ namespace KR1
                 updateRow();
                 updateView();
                 PurchasesModel.reset();
-                clearInputs();
+                
             }
         }
         private void deleteButton_Click(object sender, EventArgs e)
         {
-            if (isIncorrectModel() || isIncorrectInputs())
+            if (isIncorrectModel())
             {
                 MessageBox.Show("Выберите строку");
             }
@@ -131,7 +113,7 @@ namespace KR1
                 deleteRow();
                 updateView();
                 PurchasesModel.reset();
-                clearInputs();
+                
             }
         }
 
@@ -139,7 +121,9 @@ namespace KR1
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Purchases". При необходимости она может быть перемещена или удалена.
             this.purchasesTableAdapter.Fill(this.bD_KRDataSet.Purchases);
-            updateDGVDataSource();
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Purchases". При необходимости она может быть перемещена или удалена.
+            this.purchasesTableAdapter.Fill(this.bD_KRDataSet.Purchases);
+            //updateDGVDataSource();
         }
     }
 }
