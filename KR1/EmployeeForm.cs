@@ -19,6 +19,7 @@ namespace KR1
             public static string name { get; set; }
             public static string patronymic { get; set; }
             public static bool networkAccess { get; set; }
+            
             public static void reset()
             {
                 id = -1;
