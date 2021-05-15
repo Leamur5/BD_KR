@@ -43,29 +43,29 @@ namespace KR1
 
         public void updateView()
         {
-            accessoriesTableAdapter2.Fill(bD_KRDataSet2.Accessories);
+            accessoriesTableAdapter3.Fill(bD_KRDataSet3.Accessories);
             accessoriesBindingSource.ResetBindings(false);
             AccessoriesDataGridView.Update();
         }
 
         public void insertRow()
         {
-            accessoriesTableAdapter2.Insert(ViewTextBox.Text, Convert.ToInt32(costNumericUpDown.Value),
-                purchasesTableAdapter2.GetData().First(u => u.ID == Convert.ToInt32(purchaseComboBox.Text)).ID);
+            accessoriesTableAdapter3.Insert(ViewTextBox.Text, Convert.ToInt32(costNumericUpDown.Value),
+                purchasesTableAdapter3.GetData().First(u => u.ID == Convert.ToInt32(purchaseComboBox.Text)).ID);
         }
         public void deleteRow()
         {
-            accessoriesTableAdapter2.Delete(AccessoriesModel.id, AccessoriesModel.view, AccessoriesModel.cost, AccessoriesModel.purchase);
+            accessoriesTableAdapter3.Delete(AccessoriesModel.id, AccessoriesModel.view, AccessoriesModel.cost, AccessoriesModel.purchase);
         }
         public void updateRow()
         {
-            accessoriesTableAdapter2.Update(bD_KRDataSet1);
+            accessoriesTableAdapter3.Update(bD_KRDataSet3);
         }
         public void updateInputs()
         {
             ViewTextBox.Text = AccessoriesModel.view;
             costNumericUpDown.Value = AccessoriesModel.cost;
-            purchaseComboBox.SelectedIndex = purchaseComboBox.FindString(Convert.ToString(purchasesTableAdapter2.GetData().FirstOrDefault(u => u.ID == AccessoriesModel.purchase).ID));
+            purchaseComboBox.SelectedIndex = purchaseComboBox.FindString(Convert.ToString(purchasesTableAdapter3.GetData().FirstOrDefault(u => u.ID == AccessoriesModel.purchase).ID));
 
             string query = "SELECT Purchases.ID,Purchases.Provider, Purchases.DeliveryDate,Purchases.GuaranteePeriod,Purchases.PurchaseAmount " +
                 "FROM(Accessories INNER JOIN Purchases ON Accessories.Purchase_ID = Purchases.ID) " +
@@ -164,7 +164,7 @@ namespace KR1
         }
         private void changePurchaseButton_Click(object sender, EventArgs e)
         {
-            PurchasesForm f = new PurchasesForm(AccessoriesModel.id);
+            PurchasesForm f = new PurchasesForm(AccessoriesModel.purchase);
             Hide();
             f.ShowDialog(this);
             Show();
@@ -174,10 +174,11 @@ namespace KR1
 
         private void AccessoriesForm_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet2.Purchases". При необходимости она может быть перемещена или удалена.
-            this.purchasesTableAdapter2.Fill(this.bD_KRDataSet2.Purchases);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet2.Accessories". При необходимости она может быть перемещена или удалена.
-            this.accessoriesTableAdapter2.Fill(this.bD_KRDataSet2.Accessories);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet3.Purchases". При необходимости она может быть перемещена или удалена.
+            this.purchasesTableAdapter3.Fill(this.bD_KRDataSet3.Purchases);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet3.Accessories". При необходимости она может быть перемещена или удалена.
+            this.accessoriesTableAdapter3.Fill(this.bD_KRDataSet3.Accessories);
+            
             
         }
 

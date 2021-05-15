@@ -16,5 +16,42 @@ namespace KR1
         {
             InitializeComponent();
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void providerBtn_Click(object sender, EventArgs e)
+        {
+            ProvidersForm f = new ProvidersForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
+
+        private void repairBtn_Click(object sender, EventArgs e)
+        {
+            RepairForm f = new RepairForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
+
+        private void locationBtn_Click(object sender, EventArgs e)
+        {
+            LocationForm f = new LocationForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
+
+        private void purchasesBtn_Click(object sender, EventArgs e)
+        {
+            PurchasesWithEditingForm f = new PurchasesWithEditingForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }

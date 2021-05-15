@@ -76,17 +76,41 @@
     <Compile Include="EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="LocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LocationForm.Designer.cs">
+      <DependentUpon>LocationForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="NetworkForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="NetworkForm.Designer.cs">
       <DependentUpon>NetworkForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProvidersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProvidersForm.Designer.cs">
+      <DependentUpon>ProvidersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="PurchasesForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="PurchasesForm.Designer.cs">
       <DependentUpon>PurchasesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PurchasesWithEditingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PurchasesWithEditingForm.Designer.cs">
+      <DependentUpon>PurchasesWithEditingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RepairForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RepairForm.Designer.cs">
+      <DependentUpon>RepairForm.cs</DependentUpon>
     </Compile>
     <Compile Include="StuffFormsForm.cs">
       <SubType>Form</SubType>
@@ -165,6 +189,12 @@
     </Compile>
     <EmbeddedResource Include="PurchasesForm.resx">
       <DependentUpon>PurchasesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PurchasesWithEditingForm.resx">
+      <DependentUpon>PurchasesWithEditingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="StuffFormsForm.resx">
+      <DependentUpon>StuffFormsForm.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="BD_KRDataSet.xsc">
       <DependentUpon>BD_KRDataSet.xsd</DependentUpon>

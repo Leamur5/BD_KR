@@ -17,3 +17,5 @@ C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.NetworkForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.EmployeeForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.AccessoriesForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.PurchasesForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.StuffFormsForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.PurchasesWithEditingForm.resources

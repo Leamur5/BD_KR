@@ -1,7 +1,7 @@
 ﻿
 namespace KR1
 {
-    partial class PurchasesForm
+    partial class PurchasesWithEditingForm
     {
         /// <summary>
         /// Required designer variable.
@@ -31,10 +31,7 @@ namespace KR1
         {
             this.components = new System.ComponentModel.Container();
             this.formLabel = new System.Windows.Forms.Label();
-            this.controlsPanel = new System.Windows.Forms.Panel();
-            this.deleteButton = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
-            this.purchaseDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bD_KRDataSet = new KR1.BD_KRDataSet();
             this.purchasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.purchasesTableAdapter = new KR1.BD_KRDataSetTableAdapters.PurchasesTableAdapter();
@@ -44,8 +41,7 @@ namespace KR1
             this.deliveryDateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guaranteePeriodDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.purchaseAmountDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.controlsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.purchaseDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).BeginInit();
             this.SuspendLayout();
@@ -54,58 +50,28 @@ namespace KR1
             // 
             this.formLabel.AutoSize = true;
             this.formLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.formLabel.Location = new System.Drawing.Point(316, 48);
+            this.formLabel.Location = new System.Drawing.Point(67, 24);
             this.formLabel.Name = "formLabel";
-            this.formLabel.Size = new System.Drawing.Size(152, 31);
-            this.formLabel.TabIndex = 1;
-            this.formLabel.Text = "Закупка №";
+            this.formLabel.Size = new System.Drawing.Size(118, 31);
+            this.formLabel.TabIndex = 2;
+            this.formLabel.Text = "Закупки";
             // 
-            // controlsPanel
+            // dataGridView1
             // 
-            this.controlsPanel.Controls.Add(this.deleteButton);
-            this.controlsPanel.Controls.Add(this.closeButton);
-            this.controlsPanel.Location = new System.Drawing.Point(207, 394);
-            this.controlsPanel.Name = "controlsPanel";
-            this.controlsPanel.Size = new System.Drawing.Size(401, 88);
-            this.controlsPanel.TabIndex = 101;
-            // 
-            // deleteButton
-            // 
-            this.deleteButton.Location = new System.Drawing.Point(50, 13);
-            this.deleteButton.Name = "deleteButton";
-            this.deleteButton.Size = new System.Drawing.Size(98, 41);
-            this.deleteButton.TabIndex = 57;
-            this.deleteButton.Text = "Удалить запись";
-            this.deleteButton.UseVisualStyleBackColor = true;
-            this.deleteButton.Click += new System.EventHandler(this.deleteButton_Click);
-            // 
-            // closeButton
-            // 
-            this.closeButton.Location = new System.Drawing.Point(247, 11);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(98, 44);
-            this.closeButton.TabIndex = 55;
-            this.closeButton.Text = "Закрыть форму";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
-            // 
-            // purchaseDataGridView
-            // 
-            this.purchaseDataGridView.AutoGenerateColumns = false;
-            this.purchaseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.purchaseDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridView1.AutoGenerateColumns = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.iDDataGridViewTextBoxColumn,
             this.efficiencyDataGridViewCheckBoxColumn,
             this.providerDataGridViewTextBoxColumn,
             this.deliveryDateDataGridViewTextBoxColumn,
             this.guaranteePeriodDataGridViewTextBoxColumn,
             this.purchaseAmountDataGridViewTextBoxColumn});
-            this.purchaseDataGridView.DataSource = this.purchasesBindingSource;
-            this.purchaseDataGridView.Location = new System.Drawing.Point(84, 155);
-            this.purchaseDataGridView.Name = "purchaseDataGridView";
-            this.purchaseDataGridView.Size = new System.Drawing.Size(645, 206);
-            this.purchaseDataGridView.TabIndex = 102;
-            this.purchaseDataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.purchaseDataGridView_RowHeaderMouseClick);
+            this.dataGridView1.DataSource = this.purchasesBindingSource;
+            this.dataGridView1.Location = new System.Drawing.Point(73, 220);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.Size = new System.Drawing.Size(645, 150);
+            this.dataGridView1.TabIndex = 3;
             // 
             // bD_KRDataSet
             // 
@@ -157,19 +123,17 @@ namespace KR1
             this.purchaseAmountDataGridViewTextBoxColumn.HeaderText = "PurchaseAmount";
             this.purchaseAmountDataGridViewTextBoxColumn.Name = "purchaseAmountDataGridViewTextBoxColumn";
             // 
-            // PurchasesForm
+            // PurchasesWithEditingForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 464);
-            this.Controls.Add(this.purchaseDataGridView);
-            this.Controls.Add(this.controlsPanel);
+            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.formLabel);
-            this.Name = "PurchasesForm";
-            this.Text = "PurchasesForm";
-            this.Load += new System.EventHandler(this.PurchasesForm_Load);
-            this.controlsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.purchaseDataGridView)).EndInit();
+            this.Name = "PurchasesWithEditingForm";
+            this.Text = "PurchasesWithEditingForm";
+            this.Load += new System.EventHandler(this.PurchasesWithEditingForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).EndInit();
             this.ResumeLayout(false);
@@ -180,10 +144,7 @@ namespace KR1
         #endregion
 
         private System.Windows.Forms.Label formLabel;
-        private System.Windows.Forms.Panel controlsPanel;
-        private System.Windows.Forms.Button deleteButton;
-        private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.DataGridView purchaseDataGridView;
+        private System.Windows.Forms.DataGridView dataGridView1;
         private BD_KRDataSet bD_KRDataSet;
         private System.Windows.Forms.BindingSource purchasesBindingSource;
         private BD_KRDataSetTableAdapters.PurchasesTableAdapter purchasesTableAdapter;

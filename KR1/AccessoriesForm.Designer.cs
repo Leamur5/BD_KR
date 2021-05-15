@@ -37,8 +37,10 @@ namespace KR1
             this.ViewTextBox = new System.Windows.Forms.TextBox();
             this.costNumericUpDown = new System.Windows.Forms.NumericUpDown();
             this.purchaseComboBox = new System.Windows.Forms.ComboBox();
+            this.purchasesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.purchasesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.AccessoriesDataGridView = new System.Windows.Forms.DataGridView();
+            this.accessoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.accessoriesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.controlsPanel = new System.Windows.Forms.Panel();
             this.deleteButton = new System.Windows.Forms.Button();
@@ -47,24 +49,26 @@ namespace KR1
             this.saveButton = new System.Windows.Forms.Button();
             this.PurchaseDataGridView = new System.Windows.Forms.DataGridView();
             this.changePurchaseButton = new System.Windows.Forms.Button();
-            this.bD_KRDataSet2 = new KR1.BD_KRDataSet();
-            this.accessoriesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.accessoriesTableAdapter2 = new KR1.BD_KRDataSetTableAdapters.AccessoriesTableAdapter();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.purchasesBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.purchasesTableAdapter2 = new KR1.BD_KRDataSetTableAdapters.PurchasesTableAdapter();
+            this.bD_KRDataSet3 = new KR1.BD_KRDataSet();
+            this.accessoriesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.accessoriesTableAdapter3 = new KR1.BD_KRDataSetTableAdapters.AccessoriesTableAdapter();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.purchasesBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.purchasesTableAdapter3 = new KR1.BD_KRDataSetTableAdapters.PurchasesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.costNumericUpDown)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesDataGridView)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).BeginInit();
             this.controlsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PurchaseDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -125,7 +129,7 @@ namespace KR1
             // 
             // purchaseComboBox
             // 
-            this.purchaseComboBox.DataSource = this.purchasesBindingSource1;
+            this.purchaseComboBox.DataSource = this.purchasesBindingSource2;
             this.purchaseComboBox.DisplayMember = "ID";
             this.purchaseComboBox.FormattingEnabled = true;
             this.purchaseComboBox.Location = new System.Drawing.Point(156, 144);
@@ -133,6 +137,10 @@ namespace KR1
             this.purchaseComboBox.Size = new System.Drawing.Size(152, 21);
             this.purchaseComboBox.TabIndex = 106;
             this.purchaseComboBox.ValueMember = "UnitId";
+            // 
+            // purchasesBindingSource1
+            // 
+            this.purchasesBindingSource1.DataMember = "Purchases";
             // 
             // purchasesBindingSource
             // 
@@ -143,17 +151,21 @@ namespace KR1
             this.AccessoriesDataGridView.AutoGenerateColumns = false;
             this.AccessoriesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.AccessoriesDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8});
-            this.AccessoriesDataGridView.DataSource = this.accessoriesBindingSource1;
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn10,
+            this.dataGridViewTextBoxColumn11,
+            this.dataGridViewTextBoxColumn12});
+            this.AccessoriesDataGridView.DataSource = this.accessoriesBindingSource2;
             this.AccessoriesDataGridView.Location = new System.Drawing.Point(345, 72);
             this.AccessoriesDataGridView.Name = "AccessoriesDataGridView";
-            this.AccessoriesDataGridView.Size = new System.Drawing.Size(461, 150);
+            this.AccessoriesDataGridView.Size = new System.Drawing.Size(457, 150);
             this.AccessoriesDataGridView.TabIndex = 107;
             this.AccessoriesDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.AccessoriesDataGridView_CellContentClick);
             this.AccessoriesDataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.AccessoriesDataGridView_RowHeaderMouseClick);
+            // 
+            // accessoriesBindingSource1
+            // 
+            this.accessoriesBindingSource1.DataMember = "Accessories";
             // 
             // accessoriesBindingSource
             // 
@@ -213,9 +225,9 @@ namespace KR1
             // PurchaseDataGridView
             // 
             this.PurchaseDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.PurchaseDataGridView.Location = new System.Drawing.Point(131, 266);
+            this.PurchaseDataGridView.Location = new System.Drawing.Point(131, 269);
             this.PurchaseDataGridView.Name = "PurchaseDataGridView";
-            this.PurchaseDataGridView.Size = new System.Drawing.Size(533, 127);
+            this.PurchaseDataGridView.Size = new System.Drawing.Size(547, 127);
             this.PurchaseDataGridView.TabIndex = 110;
             // 
             // changePurchaseButton
@@ -228,52 +240,52 @@ namespace KR1
             this.changePurchaseButton.UseVisualStyleBackColor = true;
             this.changePurchaseButton.Click += new System.EventHandler(this.changePurchaseButton_Click);
             // 
-            // bD_KRDataSet2
+            // bD_KRDataSet3
             // 
-            this.bD_KRDataSet2.DataSetName = "BD_KRDataSet";
-            this.bD_KRDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.bD_KRDataSet3.DataSetName = "BD_KRDataSet";
+            this.bD_KRDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // accessoriesBindingSource1
+            // accessoriesBindingSource2
             // 
-            this.accessoriesBindingSource1.DataMember = "Accessories";
-            this.accessoriesBindingSource1.DataSource = this.bD_KRDataSet2;
+            this.accessoriesBindingSource2.DataMember = "Accessories";
+            this.accessoriesBindingSource2.DataSource = this.bD_KRDataSet3;
             // 
-            // accessoriesTableAdapter2
+            // accessoriesTableAdapter3
             // 
-            this.accessoriesTableAdapter2.ClearBeforeFill = true;
+            this.accessoriesTableAdapter3.ClearBeforeFill = true;
             // 
-            // dataGridViewTextBoxColumn5
+            // dataGridViewTextBoxColumn9
             // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "ID";
-            this.dataGridViewTextBoxColumn5.HeaderText = "ID";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "ID";
+            this.dataGridViewTextBoxColumn9.HeaderText = "ID";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
             // 
-            // dataGridViewTextBoxColumn6
+            // dataGridViewTextBoxColumn10
             // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "View";
-            this.dataGridViewTextBoxColumn6.HeaderText = "View";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            this.dataGridViewTextBoxColumn10.DataPropertyName = "View";
+            this.dataGridViewTextBoxColumn10.HeaderText = "View";
+            this.dataGridViewTextBoxColumn10.Name = "dataGridViewTextBoxColumn10";
             // 
-            // dataGridViewTextBoxColumn7
+            // dataGridViewTextBoxColumn11
             // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "Cost";
-            this.dataGridViewTextBoxColumn7.HeaderText = "Cost";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            this.dataGridViewTextBoxColumn11.DataPropertyName = "Cost";
+            this.dataGridViewTextBoxColumn11.HeaderText = "Cost";
+            this.dataGridViewTextBoxColumn11.Name = "dataGridViewTextBoxColumn11";
             // 
-            // dataGridViewTextBoxColumn8
+            // dataGridViewTextBoxColumn12
             // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "Purchase_ID";
-            this.dataGridViewTextBoxColumn8.HeaderText = "Purchase_ID";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            this.dataGridViewTextBoxColumn12.DataPropertyName = "Purchase_ID";
+            this.dataGridViewTextBoxColumn12.HeaderText = "Purchase_ID";
+            this.dataGridViewTextBoxColumn12.Name = "dataGridViewTextBoxColumn12";
             // 
-            // purchasesBindingSource1
+            // purchasesBindingSource2
             // 
-            this.purchasesBindingSource1.DataMember = "Purchases";
-            this.purchasesBindingSource1.DataSource = this.bD_KRDataSet2;
+            this.purchasesBindingSource2.DataMember = "Purchases";
+            this.purchasesBindingSource2.DataSource = this.bD_KRDataSet3;
             // 
-            // purchasesTableAdapter2
+            // purchasesTableAdapter3
             // 
-            this.purchasesTableAdapter2.ClearBeforeFill = true;
+            this.purchasesTableAdapter3.ClearBeforeFill = true;
             // 
             // AccessoriesForm
             // 
@@ -296,14 +308,16 @@ namespace KR1
             this.Load += new System.EventHandler(this.AccessoriesForm_Load);
             this.Click += new System.EventHandler(this.AccessoriesForm_Click);
             ((System.ComponentModel.ISupportInitialize)(this.costNumericUpDown)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.AccessoriesDataGridView)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource)).EndInit();
             this.controlsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.PurchaseDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.accessoriesBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.purchasesBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -351,5 +365,14 @@ namespace KR1
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
         private System.Windows.Forms.BindingSource purchasesBindingSource1;
         private BD_KRDataSetTableAdapters.PurchasesTableAdapter purchasesTableAdapter2;
+        private BD_KRDataSet bD_KRDataSet3;
+        private System.Windows.Forms.BindingSource accessoriesBindingSource2;
+        private BD_KRDataSetTableAdapters.AccessoriesTableAdapter accessoriesTableAdapter3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn10;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn11;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn12;
+        private System.Windows.Forms.BindingSource purchasesBindingSource2;
+        private BD_KRDataSetTableAdapters.PurchasesTableAdapter purchasesTableAdapter3;
     }
 }

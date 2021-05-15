@@ -22,7 +22,7 @@ namespace KR1
             public static int purchaseAmount { get; set; }
             public static void reset()
             {
-                id = -1;
+                //id = -1;
                 efficiency = false;
                 provider = -1;
                 deliveryDate = new DateTime(0001, 01, 01);
@@ -42,10 +42,10 @@ namespace KR1
 
         private void updateDGVDataSource()
         {
-            /*string query = "SELECT Purchases.ID,Purchases.Provider, Purchases.DeliveryDate,Purchases.GuaranteePeriod,Purchases.PurchaseAmount " +
+            string query = "SELECT Purchases.ID,Purchases.Efficiency, Purchases.Provider, Purchases.DeliveryDate,Purchases.GuaranteePeriod,Purchases.PurchaseAmount " +
                 "FROM(Accessories INNER JOIN Purchases ON Accessories.Purchase_ID = Purchases.ID) " +
                 "WHERE(Purchases.ID = " + PurchasesModel.id.ToString() + ")";
-            purchaseDataGridView.DataSource = DGVDataSourceChanger.getNewDGVDataSource(query);*/
+            purchaseDataGridView.DataSource = DGVDataSourceChanger.getNewDGVDataSource(query);
             purchaseDataGridView.Update();
         }
         public void updateView()
@@ -123,7 +123,7 @@ namespace KR1
             this.purchasesTableAdapter.Fill(this.bD_KRDataSet.Purchases);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Purchases". При необходимости она может быть перемещена или удалена.
             this.purchasesTableAdapter.Fill(this.bD_KRDataSet.Purchases);
-            //updateDGVDataSource();
+            updateDGVDataSource();
         }
     }
 }
