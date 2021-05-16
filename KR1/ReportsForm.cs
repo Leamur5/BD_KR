@@ -45,5 +45,13 @@ namespace KR1
             f.ShowDialog(this);
             Show();
         }
+
+        private void productsListBtn_Click(object sender, EventArgs e)
+        {
+            ReportEmployeeForm f = new ReportEmployeeForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }
