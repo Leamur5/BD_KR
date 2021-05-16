@@ -16,5 +16,18 @@ namespace KR1
         {
             InitializeComponent();
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void employeesListBtn_Click(object sender, EventArgs e)
+        {
+            ReportAccessoriesForm f = new ReportAccessoriesForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }
