@@ -153,6 +153,12 @@
     <Compile Include="ReportEmployeeForm.Designer.cs">
       <DependentUpon>ReportEmployeeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportPurchasesSumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportPurchasesSumForm.Designer.cs">
+      <DependentUpon>ReportPurchasesSumForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportRepairForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -267,6 +273,10 @@
     <EmbeddedResource Include="ReportEmployee.rdlc" />
     <EmbeddedResource Include="ReportEmployeeForm.resx">
       <DependentUpon>ReportEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportPurchasesSum.rdlc" />
+    <EmbeddedResource Include="ReportPurchasesSumForm.resx">
+      <DependentUpon>ReportPurchasesSumForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportRepair.rdlc" />
     <EmbeddedResource Include="ReportRepairForm.resx">

@@ -90,8 +90,9 @@ namespace KR1
             this.NDSForeachDishBtn.Name = "NDSForeachDishBtn";
             this.NDSForeachDishBtn.Size = new System.Drawing.Size(134, 59);
             this.NDSForeachDishBtn.TabIndex = 25;
-            this.NDSForeachDishBtn.Text = "НДС для каждого блюда";
+            this.NDSForeachDishBtn.Text = "Сумма закупок";
             this.NDSForeachDishBtn.UseVisualStyleBackColor = true;
+            this.NDSForeachDishBtn.Click += new System.EventHandler(this.NDSForeachDishBtn_Click);
             // 
             // tablesListBtn
             // 

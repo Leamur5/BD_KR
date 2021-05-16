@@ -89,3 +89,4 @@ C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.ReportComputersForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.ReportRepairForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.ReportEmployeeForm.resources
 C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.ReportServiceLifeForm.resources
+C:\Users\User\source\repos\KR1\KR1\obj\Debug\KR1.ReportPurchasesSumForm.resources

@@ -61,5 +61,13 @@ namespace KR1
             f.ShowDialog(this);
             Show();
         }
+
+        private void NDSForeachDishBtn_Click(object sender, EventArgs e)
+        {
+            ReportPurchasesSumForm f = new ReportPurchasesSumForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }
