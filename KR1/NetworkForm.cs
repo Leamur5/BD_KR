@@ -35,6 +35,7 @@ namespace KR1
             InitializeComponent();
             clearInputs();
             PositionModel.reset();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void NetworkForm_Load(object sender, EventArgs e)
@@ -157,6 +158,14 @@ namespace KR1
         private void label2_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ReportNetworkForm f = new ReportNetworkForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
         }
     }
 }

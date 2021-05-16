@@ -45,20 +45,23 @@ namespace KR1
             this.saveButton = new System.Windows.Forms.Button();
             this.InternetAccess = new System.Windows.Forms.CheckBox();
             this.networkDataGridView = new System.Windows.Forms.DataGridView();
-            this.networkBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bD_KRDataSet3 = new KR1.BD_KRDataSet();
-            this.networkBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.networkTableAdapter3 = new KR1.BD_KRDataSetTableAdapters.NetworkTableAdapter();
             this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewCheckBoxColumn2 = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.networkBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_KRDataSet3 = new KR1.BD_KRDataSet();
+            this.networkBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.networkTableAdapter3 = new KR1.BD_KRDataSetTableAdapters.NetworkTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.controlsPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.networkDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -206,24 +209,6 @@ namespace KR1
             this.networkDataGridView.TabIndex = 101;
             this.networkDataGridView.RowHeaderMouseClick += new System.Windows.Forms.DataGridViewCellMouseEventHandler(this.networkDataGridView_RowHeaderMouseClick);
             // 
-            // networkBindingSource
-            // 
-            this.networkBindingSource.DataMember = "Network";
-            // 
-            // bD_KRDataSet3
-            // 
-            this.bD_KRDataSet3.DataSetName = "BD_KRDataSet";
-            this.bD_KRDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // networkBindingSource1
-            // 
-            this.networkBindingSource1.DataMember = "Network";
-            this.networkBindingSource1.DataSource = this.bD_KRDataSet3;
-            // 
-            // networkTableAdapter3
-            // 
-            this.networkTableAdapter3.ClearBeforeFill = true;
-            // 
             // dataGridViewTextBoxColumn5
             // 
             this.dataGridViewTextBoxColumn5.DataPropertyName = "ID";
@@ -254,11 +239,50 @@ namespace KR1
             this.dataGridViewTextBoxColumn8.HeaderText = "IPAdress";
             this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
             // 
+            // networkBindingSource1
+            // 
+            this.networkBindingSource1.DataMember = "Network";
+            this.networkBindingSource1.DataSource = this.bD_KRDataSet3;
+            // 
+            // bD_KRDataSet3
+            // 
+            this.bD_KRDataSet3.DataSetName = "BD_KRDataSet";
+            this.bD_KRDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // networkBindingSource
+            // 
+            this.networkBindingSource.DataMember = "Network";
+            // 
+            // networkTableAdapter3
+            // 
+            this.networkTableAdapter3.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(54, 302);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 34);
+            this.button1.TabIndex = 102;
+            this.button1.Text = "Отчет";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::KR1.Properties.Resources.img_87385;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 302);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox1.TabIndex = 112;
+            this.pictureBox1.TabStop = false;
+            // 
             // NetworkForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(799, 459);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.networkDataGridView);
             this.Controls.Add(this.InternetAccess);
             this.Controls.Add(this.controlsPanel);
@@ -276,9 +300,10 @@ namespace KR1
             this.Click += new System.EventHandler(this.NetworkForm_Click);
             this.controlsPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.networkDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.networkBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -326,5 +351,7 @@ namespace KR1
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
         private System.Windows.Forms.DataGridViewCheckBoxColumn dataGridViewCheckBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
