@@ -53,5 +53,13 @@ namespace KR1
             f.ShowDialog(this);
             Show();
         }
+
+        private void providersListBtn_Click(object sender, EventArgs e)
+        {
+            ReportServiceLifeForm f = new ReportServiceLifeForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }

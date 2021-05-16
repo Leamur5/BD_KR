@@ -30,5 +30,10 @@ namespace KR1
 
             this.reportViewer1.RefreshReport();
         }
+
+        private void backBtn_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
     }
 }

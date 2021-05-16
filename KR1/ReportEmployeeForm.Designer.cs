@@ -30,16 +30,17 @@ namespace KR1
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.button1 = new System.Windows.Forms.Button();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.EmployeeDataSet = new KR1.EmployeeDataSet();
-            this.EmployeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.EmployeeTableAdapter = new KR1.EmployeeDataSetTableAdapters.EmployeeTableAdapter();
             this.label1 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataSet)).BeginInit();
+            this.EmployeeBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.EmployeeDataSet = new KR1.EmployeeDataSet();
+            this.EmployeeTableAdapter = new KR1.EmployeeDataSetTableAdapters.EmployeeTableAdapter();
+            this.backBtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataSet)).BeginInit();
             this.SuspendLayout();
             // 
             // button1
@@ -61,30 +62,15 @@ namespace KR1
             // 
             // reportViewer1
             // 
-            reportDataSource2.Name = "DataSet";
-            reportDataSource2.Value = this.EmployeeBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            reportDataSource1.Name = "DataSet";
+            reportDataSource1.Value = this.EmployeeBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
             this.reportViewer1.LocalReport.ReportEmbeddedResource = "KR1.ReportEmployee.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(54, 125);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
             this.reportViewer1.Size = new System.Drawing.Size(716, 246);
             this.reportViewer1.TabIndex = 2;
-            // 
-            // EmployeeDataSet
-            // 
-            this.EmployeeDataSet.DataSetName = "EmployeeDataSet";
-            this.EmployeeDataSet.EnforceConstraints = false;
-            this.EmployeeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // EmployeeBindingSource
-            // 
-            this.EmployeeBindingSource.DataMember = "Employee";
-            this.EmployeeBindingSource.DataSource = this.EmployeeDataSet;
-            // 
-            // EmployeeTableAdapter
-            // 
-            this.EmployeeTableAdapter.ClearBeforeFill = true;
             // 
             // label1
             // 
@@ -96,11 +82,38 @@ namespace KR1
             this.label1.TabIndex = 3;
             this.label1.Text = "Введите фамилию";
             // 
+            // EmployeeBindingSource
+            // 
+            this.EmployeeBindingSource.DataMember = "Employee";
+            this.EmployeeBindingSource.DataSource = this.EmployeeDataSet;
+            // 
+            // EmployeeDataSet
+            // 
+            this.EmployeeDataSet.DataSetName = "EmployeeDataSet";
+            this.EmployeeDataSet.EnforceConstraints = false;
+            this.EmployeeDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // EmployeeTableAdapter
+            // 
+            this.EmployeeTableAdapter.ClearBeforeFill = true;
+            // 
+            // backBtn
+            // 
+            this.backBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.backBtn.Location = new System.Drawing.Point(636, 39);
+            this.backBtn.Name = "backBtn";
+            this.backBtn.Size = new System.Drawing.Size(134, 44);
+            this.backBtn.TabIndex = 29;
+            this.backBtn.Text = "Назад";
+            this.backBtn.UseVisualStyleBackColor = true;
+            this.backBtn.Click += new System.EventHandler(this.backBtn_Click);
+            // 
             // ReportEmployeeForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.backBtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.reportViewer1);
             this.Controls.Add(this.textBox1);
@@ -108,8 +121,8 @@ namespace KR1
             this.Name = "ReportEmployeeForm";
             this.Text = "ReportEmployeeForm";
             this.Load += new System.EventHandler(this.ReportEmployeeForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.EmployeeBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EmployeeDataSet)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -124,5 +137,6 @@ namespace KR1
         private EmployeeDataSet EmployeeDataSet;
         private EmployeeDataSetTableAdapters.EmployeeTableAdapter EmployeeTableAdapter;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Button backBtn;
     }
 }

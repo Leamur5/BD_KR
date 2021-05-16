@@ -79,8 +79,9 @@ namespace KR1
             this.providersListBtn.Name = "providersListBtn";
             this.providersListBtn.Size = new System.Drawing.Size(134, 59);
             this.providersListBtn.TabIndex = 24;
-            this.providersListBtn.Text = "Поставщики";
+            this.providersListBtn.Text = "Сроки службы";
             this.providersListBtn.UseVisualStyleBackColor = true;
+            this.providersListBtn.Click += new System.EventHandler(this.providersListBtn_Click);
             // 
             // NDSForeachDishBtn
             // 
