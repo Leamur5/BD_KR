@@ -101,8 +101,9 @@ namespace KR1
             this.tablesListBtn.Name = "tablesListBtn";
             this.tablesListBtn.Size = new System.Drawing.Size(134, 59);
             this.tablesListBtn.TabIndex = 26;
-            this.tablesListBtn.Text = "Столики";
+            this.tablesListBtn.Text = "Стоимость комплектующих";
             this.tablesListBtn.UseVisualStyleBackColor = true;
+            this.tablesListBtn.Click += new System.EventHandler(this.tablesListBtn_Click);
             // 
             // productsListBtn
             // 

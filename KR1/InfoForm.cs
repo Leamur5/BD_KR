@@ -15,6 +15,7 @@ namespace KR1
         public InfoForm()
         {
             InitializeComponent();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }

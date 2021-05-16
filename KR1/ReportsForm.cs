@@ -69,5 +69,13 @@ namespace KR1
             f.ShowDialog(this);
             Show();
         }
+
+        private void tablesListBtn_Click(object sender, EventArgs e)
+        {
+            ReportAccessoriesCostForm f = new ReportAccessoriesCostForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }

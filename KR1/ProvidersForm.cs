@@ -34,6 +34,7 @@ namespace KR1
 
             ProvidersModel.reset();
             clearInputs();
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
         public void updateView()
         {
@@ -158,6 +159,14 @@ namespace KR1
             // TODO: данная строка кода позволяет загрузить данные в таблицу "bD_KRDataSet.Provider". При необходимости она может быть перемещена или удалена.
             this.providerTableAdapter.Fill(this.bD_KRDataSet.Provider);
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            ReportProviderForm f = new ReportProviderForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
         }
     }
 }

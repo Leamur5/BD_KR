@@ -48,9 +48,9 @@ namespace KR1
             // pictureBox1
             // 
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(83, 107);
+            this.pictureBox1.Location = new System.Drawing.Point(179, 107);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(642, 390);
+            this.pictureBox1.Size = new System.Drawing.Size(403, 390);
             this.pictureBox1.TabIndex = 7;
             this.pictureBox1.TabStop = false;
             // 

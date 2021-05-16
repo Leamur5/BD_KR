@@ -37,13 +37,14 @@ namespace KR1
             this.telephoneTextBox = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.adressComboBox = new System.Windows.Forms.ComboBox();
+            this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bD_KRDataSet = new KR1.BD_KRDataSet();
             this.providersDataGridView = new System.Windows.Forms.DataGridView();
             this.iDDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.providerNameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.telephoneDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.adressDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.providerBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.bD_KRDataSet = new KR1.BD_KRDataSet();
             this.providerTableAdapter = new KR1.BD_KRDataSetTableAdapters.ProviderTableAdapter();
             this.purchasesDataGridView = new System.Windows.Forms.DataGridView();
             this.controlsPanel = new System.Windows.Forms.Panel();
@@ -51,14 +52,16 @@ namespace KR1
             this.addButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.saveButton = new System.Windows.Forms.Button();
-            this.locationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.locationTableAdapter = new KR1.BD_KRDataSetTableAdapters.LocationTableAdapter();
+            this.button1 = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providersDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesDataGridView)).BeginInit();
             this.controlsPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -123,6 +126,16 @@ namespace KR1
             this.adressComboBox.TabIndex = 107;
             this.adressComboBox.ValueMember = "UnitId";
             // 
+            // locationBindingSource
+            // 
+            this.locationBindingSource.DataMember = "Location";
+            this.locationBindingSource.DataSource = this.bD_KRDataSet;
+            // 
+            // bD_KRDataSet
+            // 
+            this.bD_KRDataSet.DataSetName = "BD_KRDataSet";
+            this.bD_KRDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // providersDataGridView
             // 
             this.providersDataGridView.AutoGenerateColumns = false;
@@ -167,11 +180,6 @@ namespace KR1
             // 
             this.providerBindingSource.DataMember = "Provider";
             this.providerBindingSource.DataSource = this.bD_KRDataSet;
-            // 
-            // bD_KRDataSet
-            // 
-            this.bD_KRDataSet.DataSetName = "BD_KRDataSet";
-            this.bD_KRDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // providerTableAdapter
             // 
@@ -236,20 +244,36 @@ namespace KR1
             this.saveButton.UseVisualStyleBackColor = true;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // locationBindingSource
-            // 
-            this.locationBindingSource.DataMember = "Location";
-            this.locationBindingSource.DataSource = this.bD_KRDataSet;
-            // 
             // locationTableAdapter
             // 
             this.locationTableAdapter.ClearBeforeFill = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(723, 226);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(56, 34);
+            this.button1.TabIndex = 58;
+            this.button1.Text = "Отчет";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::KR1.Properties.Resources.img_87385;
+            this.pictureBox1.Location = new System.Drawing.Point(684, 226);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(33, 33);
+            this.pictureBox1.TabIndex = 111;
+            this.pictureBox1.TabStop = false;
             // 
             // ProvidersForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 539);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.controlsPanel);
             this.Controls.Add(this.purchasesDataGridView);
             this.Controls.Add(this.providersDataGridView);
@@ -264,12 +288,13 @@ namespace KR1
             this.Text = "ProvidersForm";
             this.Load += new System.EventHandler(this.ProvidersForm_Load);
             this.Click += new System.EventHandler(this.ProvidersForm_Click);
+            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.providersDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.providerBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bD_KRDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.purchasesDataGridView)).EndInit();
             this.controlsPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.locationBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -300,5 +325,7 @@ namespace KR1
         private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.BindingSource locationBindingSource;
         private BD_KRDataSetTableAdapters.LocationTableAdapter locationTableAdapter;
+        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

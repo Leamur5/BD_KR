@@ -135,6 +135,12 @@
     <Compile Include="RepairForm.Designer.cs">
       <DependentUpon>RepairForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportAccessoriesCostForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportAccessoriesCostForm.Designer.cs">
+      <DependentUpon>ReportAccessoriesCostForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="ReportAccessoriesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -152,6 +158,12 @@
     </Compile>
     <Compile Include="ReportEmployeeForm.Designer.cs">
       <DependentUpon>ReportEmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ReportProviderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportProviderForm.Designer.cs">
+      <DependentUpon>ReportProviderForm.cs</DependentUpon>
     </Compile>
     <Compile Include="ReportPurchasesSumForm.cs">
       <SubType>Form</SubType>
@@ -249,6 +261,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="ProvidersForm.resx">
       <DependentUpon>ProvidersForm.cs</DependentUpon>
@@ -263,6 +276,10 @@
       <DependentUpon>RepairForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportAccessories.rdlc" />
+    <EmbeddedResource Include="ReportAccessoriesCost.rdlc" />
+    <EmbeddedResource Include="ReportAccessoriesCostForm.resx">
+      <DependentUpon>ReportAccessoriesCostForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ReportAccessoriesForm.resx">
       <DependentUpon>ReportAccessoriesForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -273,6 +290,10 @@
     <EmbeddedResource Include="ReportEmployee.rdlc" />
     <EmbeddedResource Include="ReportEmployeeForm.resx">
       <DependentUpon>ReportEmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportProvider.rdlc" />
+    <EmbeddedResource Include="ReportProviderForm.resx">
+      <DependentUpon>ReportProviderForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportPurchasesSum.rdlc" />
     <EmbeddedResource Include="ReportPurchasesSumForm.resx">
@@ -329,6 +350,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\img_87385.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
