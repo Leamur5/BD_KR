@@ -57,8 +57,9 @@ namespace KR1
             this.dishesListBtn.Name = "dishesListBtn";
             this.dishesListBtn.Size = new System.Drawing.Size(134, 59);
             this.dishesListBtn.TabIndex = 21;
-            this.dishesListBtn.Text = "Меню Ресторана";
+            this.dishesListBtn.Text = "Компьютеры";
             this.dishesListBtn.UseVisualStyleBackColor = true;
+            this.dishesListBtn.Click += new System.EventHandler(this.dishesListBtn_Click);
             // 
             // positionsListBtn
             // 

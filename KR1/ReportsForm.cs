@@ -29,5 +29,13 @@ namespace KR1
             f.ShowDialog(this);
             Show();
         }
+
+        private void dishesListBtn_Click(object sender, EventArgs e)
+        {
+            ReportComputersForm f = new ReportComputersForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }

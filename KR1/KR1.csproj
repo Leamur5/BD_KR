@@ -136,6 +136,12 @@
     <Compile Include="ReportAccessoriesForm.Designer.cs">
       <DependentUpon>ReportAccessoriesForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="ReportComputersForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ReportComputersForm.Designer.cs">
+      <DependentUpon>ReportComputersForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="StuffFormsForm.cs">
       <SubType>Form</SubType>
@@ -230,6 +236,10 @@
     <EmbeddedResource Include="ReportAccessories.rdlc" />
     <EmbeddedResource Include="ReportAccessoriesForm.resx">
       <DependentUpon>ReportAccessoriesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ReportComputers.rdlc" />
+    <EmbeddedResource Include="ReportComputersForm.resx">
+      <DependentUpon>ReportComputersForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ReportsForm.resx">
       <DependentUpon>ReportsForm.cs</DependentUpon>
