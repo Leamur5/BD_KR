@@ -68,8 +68,9 @@ namespace KR1
             this.positionsListBtn.Name = "positionsListBtn";
             this.positionsListBtn.Size = new System.Drawing.Size(134, 59);
             this.positionsListBtn.TabIndex = 22;
-            this.positionsListBtn.Text = "Должности";
+            this.positionsListBtn.Text = "Ремонт";
             this.positionsListBtn.UseVisualStyleBackColor = true;
+            this.positionsListBtn.Click += new System.EventHandler(this.positionsListBtn_Click);
             // 
             // providersListBtn
             // 

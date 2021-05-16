@@ -37,5 +37,13 @@ namespace KR1
             f.ShowDialog(this);
             Show();
         }
+
+        private void positionsListBtn_Click(object sender, EventArgs e)
+        {
+            ReportRepairForm f = new ReportRepairForm();
+            Hide();
+            f.ShowDialog(this);
+            Show();
+        }
     }
 }
